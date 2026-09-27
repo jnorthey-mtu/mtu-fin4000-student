@@ -1,0 +1,10 @@
+[deps]
+ActuaryUtilities = "bdd23359-8b1c-4f88-b89b-d11982a786f4"
+FinanceModels = "77f2ae65-bdde-421f-ae9d-22f1af19dd76"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+julia = "1.10"
