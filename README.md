@@ -35,4 +35,12 @@ julia --project=julia -e 'using IJulia; IJulia.installkernel("Julia (MTU FIN4000
 
 Open a Julia notebook in VS Code and choose the **Julia (MTU FIN4000)** kernel; IJulia appends the installed Julia version to the displayed kernel name (currently **Julia (MTU FIN4000) 1.13**). The project in `julia/Project.toml` includes `FinanceModels`, `ActuaryUtilities`, `IJulia`, `Plots`, and the Julia standard libraries used by the notebooks.
 
+To validate both notebook languages, run this from the repository root:
+
+```powershell
+uv run python test/validate_notebooks.py
+```
+
+This checks Python and Julia student code syntax, executes both instructor notebook sets through their Jupyter kernels, and verifies kernel discovery.
+
 
