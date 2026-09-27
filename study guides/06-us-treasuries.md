@@ -28,15 +28,21 @@ Common features:
 
 Bills are quoted on a **bank discount** basis: the discount as a percentage of face value, on a 360-day year.
 
-$$P = 100\left(1 - d \times \frac{t}{360}\right)$$
+```math
+P = 100\left(1 - d \times \frac{t}{360}\right)
+```
 
 The discount rate understates the true return, because it divides by face value instead of price and uses 360 days. Treasury also publishes the **investment rate** (coupon-equivalent or bond-equivalent yield), for bills of six months or less:
 
-$$i = \frac{100 - P}{P} \times \frac{365}{t}$$
+```math
+i = \frac{100 - P}{P} \times \frac{365}{t}
+```
 
 The **money market yield** uses price but a 360-day year, so it lines up with other money market rates:
 
-$$y_{MM} = \frac{100 - P}{P} \times \frac{360}{t}$$
+```math
+y_{MM} = \frac{100 - P}{P} \times \frac{360}{t}
+```
 
 Worked example: 26-week bill, 182 days, discount rate 4.00%.
 
@@ -60,16 +66,20 @@ For bills longer than six months Treasury uses a more involved investment-rate f
 
 **Clean price, accrued interest and dirty price.** Quotes are clean prices. The buyer also pays the seller the coupon interest earned since the last coupon date, counted Actual/Actual:
 
-$$AI = \frac{C}{2} \times \frac{\text{days since last coupon}}{\text{days in coupon period}} \qquad P_{dirty} = P_{clean} + AI$$
+```math
+AI = \frac{C}{2} \times \frac{\text{days since last coupon}}{\text{days in coupon period}} \qquad P_{dirty} = P_{clean} + AI
+```
 
-The dirty (invoice) price discounts every remaining cash flow, with a fractional first period $w$ = days to next coupon ÷ days in period:
+The dirty (invoice) price discounts every remaining cash flow, with a fractional first period $`w`$ = days to next coupon ÷ days in period:
 
-$$P_{dirty} = \sum_{k=1}^{n} \frac{CF_k}{\left(1 + \frac{y}{2}\right)^{k-1+w}}$$
+```math
+P_{dirty} = \sum_{k=1}^{n} \frac{CF_k}{\left(1 + \frac{y}{2}\right)^{k-1+w}}
+```
 
 Worked example: 4.25% note maturing May 15, 2036, yield 4.20%, settling Sep 30, 2026.
 
-- Coupon period May 15 to Nov 15, 2026 has 184 days; 138 have passed, so $w = 46/184 = 0.25$.
-- Accrued interest $= 2.125 \times 138/184 = 1.5938$.
+- Coupon period May 15 to Nov 15, 2026 has 184 days; 138 have passed, so $`w = 46/184 = 0.25`$.
+- Accrued interest $`= 2.125 \times 138/184 = 1.5938`$.
 - Dirty price = **101.9821**; clean price = **100.3884**, quoted about **100-12+**.
 - On \$1 million face the buyer pays \$1,019,821.30.
 
@@ -273,7 +283,9 @@ A ladder spreads money evenly across a series of maturities. As each rung mature
 - Each year the maturing \$20,000 buys a new 5-year note, so after year one the ladder always runs 1 to 5 years.
 - Average maturity is 3 years at the start and stays there. Once fully rolled, the whole ladder earns 5-year rates while one-fifth of it comes due every year.
 
-$$\bar{T} = \sum_{i} w_i \, T_i = \frac{1 + 2 + 3 + 4 + 5}{5} = 3 \text{ years}$$
+```math
+\bar{T} = \sum_{i} w_i \, T_i = \frac{1 + 2 + 3 + 4 + 5}{5} = 3 \text{ years}
+```
 
 **Variations**
 
@@ -366,7 +378,7 @@ Original questions in the CFA Level I format (three choices, one correct). Not C
 
 **Answer key**
 
-1. A. $100 \times (1 - 0.05 \times 91/360) = 98.736$. B wrongly uses a 365-day year.
+1. A. $`100 \times (1 - 0.05 \times 91/360) = 98.736`$. B wrongly uses a 365-day year.
 2. A. BEY divides by price (below face) and uses 365 days.
 3. B. Treasury uses a single-price auction.
 4. A. The liquidity premium lowers its yield; heavy trading tightens its spread.

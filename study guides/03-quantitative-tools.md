@@ -13,7 +13,9 @@ Common inputs used below:
 
 The calculations each tool performs:
 
-$$P = \frac{100}{(1 + y/2)^{n}} \qquad D^{*} = \frac{T}{1 + y/2} \qquad s = 2\left[\left(\frac{100 + c/2}{P - PV_{known}}\right)^{1/n} - 1\right]$$
+```math
+P = \frac{100}{(1 + y/2)^{n}} \qquad D^{*} = \frac{T}{1 + y/2} \qquad s = 2\left[\left(\frac{100 + c/2}{P - PV_{known}}\right)^{1/n} - 1\right]
+```
 
 ## 1. TI BA II Plus Professional
 

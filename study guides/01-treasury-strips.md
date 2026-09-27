@@ -43,28 +43,34 @@ What a strip does **not** do: it does not beat the market rate. You earn exactly
 
 ## 4. How they are priced
 
-Price per 100 face, where $y$ is the bond-equivalent yield and $n$ the number of semiannual periods to maturity:
+Price per 100 face, where $`y`$ is the bond-equivalent yield and $`n`$ the number of semiannual periods to maturity:
 
-$$P = \frac{100}{\left(1 + \frac{y}{2}\right)^{n}}$$
+```math
+P = \frac{100}{\left(1 + \frac{y}{2}\right)^{n}}
+```
 
-Between coupon dates, $n$ = whole periods remaining + (days to next coupon date ÷ days in the current period).
+Between coupon dates, $`n`$ = whole periods remaining + (days to next coupon date ÷ days in the current period).
 
 Yield from price:
 
-$$y = 2\left[\left(\frac{100}{P}\right)^{1/n} - 1\right]$$
+```math
+y = 2\left[\left(\frac{100}{P}\right)^{1/n} - 1\right]
+```
 
-Worked example: 20-year strip, 4.5% yield. $n = 40$, so $P = 100 / 1.0225^{40} = 41.065$. \$10,000 face costs \$4,106.46.
+Worked example: 20-year strip, 4.5% yield. $`n = 40`$, so $`P = 100 / 1.0225^{40} = 41.065`$. \$10,000 face costs \$4,106.46.
 
 Risk measures:
 
-$$D_{mac} = T \qquad D_{mod} = \frac{T}{1 + y/2} \qquad C = \frac{T\,(T + 0.5)}{(1 + y/2)^{2}}$$
+```math
+D_{mac} = T \qquad D_{mod} = \frac{T}{1 + y/2} \qquad C = \frac{T\,(T + 0.5)}{(1 + y/2)^{2}}
+```
 
-For the 30-year strip at 4.5%, modified duration $= 30 / 1.0225 = 29.3$.
+For the 30-year strip at 4.5%, modified duration $`= 30 / 1.0225 = 29.3`$.
 
 ## 5. Tax: phantom income
 
 - The discount accretes as original issue discount (OID). The holder reports it as interest income each year, though no cash arrives.
-- Example: the 20-year strip above accretes $41.065 \times (1.0225^{2} - 1) = 1.87$ per 100 of taxable income in year one.
+- Example: the 20-year strip above accretes $`41.065 \times (1.0225^{2} - 1) = 1.87`$ per 100 of taxable income in year one.
 - That is why strips mostly sit in IRAs, pensions and other tax-deferred or tax-exempt accounts.
 
 ## 6. TIPS strips
@@ -77,8 +83,8 @@ For the 30-year strip at 4.5%, modified duration $= 30 / 1.0225 = 29.3$.
 
 1. Why does a strip have no reinvestment risk? *No cash flows before maturity, so nothing has to be reinvested.*
 2. Why are coupon strips fungible but principal strips not? *Coupon strips for a date share a CUSIP; a principal strip is tied to one parent bond for reconstitution.*
-3. Price a 10-year strip at 4.0%. *Answer:* $100 / 1.02^{20} = 67.297$.
-4. A 15-year strip trades at 50.00. Its yield? *Answer:* $2\left[(100/50)^{1/30} - 1\right] = 4.67\%$.
+3. Price a 10-year strip at 4.0%. *Answer:* $`100 / 1.02^{20} = 67.297`$.
+4. A 15-year strip trades at 50.00. Its yield? *Answer:* $`2\left[(100/50)^{1/30} - 1\right] = 4.67\%`$.
 5. What does reconstitution do to pricing? *It caps how far a coupon bond can drift from the sum of its strip prices.*
 6. Why hold strips in an IRA? *To avoid tax on accreted income that pays no cash.*
 
@@ -109,7 +115,7 @@ Original questions in the CFA Level I format (three choices, one correct). Not C
 
 **Answer key**
 
-1. A. $100 / 1.02^{20} = 67.30$. B uses annual compounding.
+1. A. $`100 / 1.02^{20} = 67.30`$. B uses annual compounding.
 2. B. A zero has no interim cash flows to reinvest.
 3. B. A zero's duration equals its maturity.
 4. A. Dealers reassemble the coupon and principal pieces.

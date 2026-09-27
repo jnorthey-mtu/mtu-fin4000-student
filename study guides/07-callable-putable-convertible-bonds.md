@@ -16,7 +16,9 @@ An **option** gives its buyer the **right, but not the obligation**, to buy or s
 | Buyer profits when | The asset price rises above the strike | The asset price falls below the strike |
 | Payoff at expiration | max(S − K, 0) | max(K − S, 0) |
 
-$$\text{Call payoff} = \max(S_T - K,\ 0) \qquad \text{Put payoff} = \max(K - S_T,\ 0) \qquad \text{Profit} = \text{Payoff} - \text{Premium}$$
+```math
+\text{Call payoff} = \max(S_T - K,\ 0) \qquad \text{Put payoff} = \max(K - S_T,\ 0) \qquad \text{Profit} = \text{Payoff} - \text{Premium}
+```
 
 Example: a call with strike 100 bought for a premium of 4. If the asset ends at 110, the payoff is 10 and the profit 6. At 95, the call expires worthless and the buyer loses the 4 premium. A put with strike 100 pays 10 if the asset ends at 90.
 
@@ -61,11 +63,15 @@ The issuer may redeem the bond before maturity at a set **call price**, usually 
 - **Reinvestment risk:** calls happen when rates are low, so proceeds are reinvested at lower rates.
 - **Price compression:** as rates fall, the price stops rising near the call price. This is **negative convexity** (Study Guide 5).
 
-$$V_{callable} = V_{straight} - V_{call}$$
+```math
+V_{callable} = V_{straight} - V_{call}
+```
 
 **Yield measures:** yield to maturity, yield to each call date, and **yield to worst**, the lowest of them.
 
-$$P = \sum_{k=1}^{n_c} \frac{C/2}{\left(1 + \frac{y_c}{2}\right)^{k}} + \frac{CP}{\left(1 + \frac{y_c}{2}\right)^{n_c}}$$
+```math
+P = \sum_{k=1}^{n_c} \frac{C/2}{\left(1 + \frac{y_c}{2}\right)^{k}} + \frac{CP}{\left(1 + \frac{y_c}{2}\right)^{n_c}}
+```
 
 Example (from Study Guide 4): a 10-year 5% bond at 105, callable in 5 years at 101. YTM = 4.377%, YTC = 4.067%, so YTW = **4.067%**. A premium callable is usually priced to its call; a discount callable to its maturity.
 
@@ -79,7 +85,9 @@ The investor may sell the bond back to the issuer at a set **put price**, usuall
 - **Issuers** pay a **lower coupon** in return, and may attract buyers who would otherwise avoid long maturities.
 - The issuer's risk: puts are exercised just when refinancing is most expensive, sometimes when the issuer is in trouble.
 
-$$V_{putable} = V_{straight} + V_{put}$$
+```math
+V_{putable} = V_{straight} + V_{put}
+```
 
 **Price floor:** as rates rise, the price stops falling near the put price, which shortens effective duration.
 
@@ -98,13 +106,17 @@ The investor may exchange the bond for a set number of the issuer's shares.
 | Minimum value | The larger of straight value and conversion value | \$900 |
 | Market conversion premium | (Price − conversion value) ÷ conversion value | (\$1,000 − \$900) ÷ \$900 = 11.1% |
 
-$$V_{convertible} = V_{straight} + V_{call\ on\ stock} \qquad \text{Floor} = \max(\text{straight value},\ \text{conversion value})$$
+```math
+V_{convertible} = V_{straight} + V_{call\ on\ stock} \qquad \text{Floor} = \max(\text{straight value},\ \text{conversion value})
+```
 
 - **Why issuers use them:** a lower coupon than straight debt, and possible future equity issuance at a price above today's share price.
 - **Why investors buy them:** bond-like downside (the straight value floor) with equity upside.
 - **Behavior:** with the stock well below the conversion price the convertible trades like a bond ("busted"); well above it, like the stock. Most convertibles are also callable, which lets the issuer force conversion once the stock has risen.
 
-$$V_{callable\ convertible} = V_{straight} + V_{call\ on\ stock} - V_{issuer\ call}$$
+```math
+V_{callable\ convertible} = V_{straight} + V_{call\ on\ stock} - V_{issuer\ call}
+```
 
 ## 5. Pricing bonds with embedded options
 
@@ -112,9 +124,13 @@ A single yield cannot price an option, because the option's value depends on how
 
 **The rule at each exercise node**
 
-$$V_{callable} = \min\left(V_{continue},\ CP\right) \qquad V_{putable} = \max\left(V_{continue},\ PP\right)$$
+```math
+V_{callable} = \min\left(V_{continue},\ CP\right) \qquad V_{putable} = \max\left(V_{continue},\ PP\right)
+```
 
-$$V_{continue} = \frac{\tfrac{1}{2}\left(V_{up} + C\right) + \tfrac{1}{2}\left(V_{down} + C\right)}{1 + r_{node}}$$
+```math
+V_{continue} = \frac{\tfrac{1}{2}\left(V_{up} + C\right) + \tfrac{1}{2}\left(V_{down} + C\right)}{1 + r_{node}}
+```
 
 **Worked example.** A 3-year, 5% annual-coupon bond. It is callable (or putable) at 100 only at the end of year 2, after that year's coupon. Up and down moves each have probability ½. The tree is illustrative; in practice it is calibrated so it reprices on-the-run Treasuries exactly.
 
@@ -160,7 +176,9 @@ Both options shorten duration: the call caps the price when rates fall, the put 
 - **Z-spread:** the constant spread over the spot (zero) curve that makes the discounted cash flows equal the price, ignoring the option.
 - **Option-adjusted spread (OAS):** the constant spread added to every rate in the tree so the model price equals the market price. It is the spread for credit and liquidity with the option removed, which makes callable, putable and straight bonds comparable.
 
-$$\text{Option cost} = Z\text{-spread} - OAS$$
+```math
+\text{Option cost} = Z\text{-spread} - OAS
+```
 
 For a callable the option cost is positive (OAS < Z-spread: part of the extra yield just pays for the call). For a putable it is negative (OAS > Z-spread).
 
