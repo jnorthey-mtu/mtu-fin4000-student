@@ -14,21 +14,29 @@ Bootstrapping extracts zero-coupon (spot) rates from coupon bond prices, one mat
 
 ## 2. Core formulas
 
-Price as a sum of discounted cash flows, with $DF_k$ the discount factor for period $k$:
+Price as a sum of discounted cash flows, with $`DF_k`$ the discount factor for period $`k`$:
 
-$$P_n = \frac{c}{2}\sum_{k=1}^{n} DF_k + 100\,DF_n$$
+```math
+P_n = \frac{c}{2}\sum_{k=1}^{n} DF_k + 100\,DF_n
+```
 
 Solved for the new discount factor (the bootstrap step):
 
-$$DF_n = \frac{P_n - \frac{c}{2}\sum_{k=1}^{n-1} DF_k}{100 + \frac{c}{2}}$$
+```math
+DF_n = \frac{P_n - \frac{c}{2}\sum_{k=1}^{n-1} DF_k}{100 + \frac{c}{2}}
+```
 
 Spot rate from a discount factor (semiannual compounding):
 
-$$s_n = 2\left[DF_n^{-1/n} - 1\right]$$
+```math
+s_n = 2\left[DF_n^{-1/n} - 1\right]
+```
 
-Forward rate for the period from $n-1$ to $n$:
+Forward rate for the period from $`n-1`$ to $`n`$:
 
-$$f_{n-1,n} = 2\left[\frac{DF_{n-1}}{DF_n} - 1\right]$$
+```math
+f_{n-1,n} = 2\left[\frac{DF_{n-1}}{DF_n} - 1\right]
+```
 
 Working in discount factors is simpler than working in spot rates: every step is linear until the final conversion.
 
@@ -44,7 +52,9 @@ Three par bonds (price 100), annual coupons, used only to show the logic.
 
 The 3-year step:
 
-$$(1 + s_3)^{3} = \frac{105}{90.525} = 1.1599 \quad\Rightarrow\quad s_3 = 5.07\%$$
+```math
+(1 + s_3)^{3} = \frac{105}{90.525} = 1.1599 \quad\Rightarrow\quad s_3 = 5.07\%
+```
 
 ## 4. Example B: semiannual coupons (Treasury convention)
 
@@ -59,7 +69,9 @@ Four par bonds, coupons paid twice a year, rates annualized with semiannual comp
 
 Step for 2.0 years: remaining value = 100 − 6.6157 = 93.3843. Then
 
-$$\left(1 + \frac{s}{2}\right)^{4} = \frac{102.30}{93.3843} = 1.095473 \quad\Rightarrow\quad s = 4.6117\%$$
+```math
+\left(1 + \frac{s}{2}\right)^{4} = \frac{102.30}{93.3843} = 1.095473 \quad\Rightarrow\quad s = 4.6117\%
+```
 
 Check: the 2-year discount factors reprice the 4.6% bond at exactly 100.
 
@@ -82,8 +94,8 @@ Check: the 2-year discount factors reprice the 4.6% bond at exactly 100.
 ## 7. Review questions
 
 1. Why does the bootstrap start at the shortest maturity? *Its bond has a single cash flow, so its rate is known directly.*
-2. Using Example B's discount factors, price a 1.5-year 5% bond. *Answer:* $2.5 \times (0.980392 + 0.959267 + 0.936719) + 100 \times 0.936719 = 7.192 + 93.672 = 100.86$.
-3. From Example B, what is the forward rate from 1.0 to 1.5 years? *Answer:* $2 \times (0.959267 / 0.936719 - 1) = 4.81\%$.
+2. Using Example B's discount factors, price a 1.5-year 5% bond. *Answer:* $`2.5 \times (0.980392 + 0.959267 + 0.936719) + 100 \times 0.936719 = 7.192 + 93.672 = 100.86`$.
+3. From Example B, what is the forward rate from 1.0 to 1.5 years? *Answer:* $`2 \times (0.959267 / 0.936719 - 1) = 4.81\%`$.
 4. When would the spot curve lie below the par curve? *When the curve is inverted.*
 5. Why does a fitted Nelson-Siegel curve not reprice every bond exactly? *It trades exact fit for smoothness, which filters out noise from individual bonds.*
 
@@ -114,9 +126,9 @@ Original questions in the CFA Level I format (three choices, one correct). Not C
 
 **Answer key**
 
-1. B. $100 = 4/1.03 + 104/(1 + s_2)^{2}$, so $s_2 = 4.02\%$.
-2. B. $1.04^{2} / 1.03 - 1 = 5.01\%$.
-3. A. $5/1.03 + 105/1.04^{2} = 4.854 + 97.078 = 101.93$.
+1. B. $`100 = 4/1.03 + 104/(1 + s_2)^{2}`$, so $`s_2 = 4.02\%`$.
+2. B. $`1.04^{2} / 1.03 - 1 = 5.01\%`$.
+3. A. $`5/1.03 + 105/1.04^{2} = 4.854 + 97.078 = 101.93`$.
 4. B. A par yield blends lower short-term spot rates, so it sits below the long spot rate.
 5. A. Each cash flow is priced at its own date's rate, so no stripping profit is possible.
 

@@ -14,7 +14,7 @@ Study guides for an undergraduate fixed income unit, aligned with Bodie, Kane & 
 
 ## Notes
 
-- Equations use GitHub's LaTeX math rendering (`$...$` and `$$...$$`).
+- Equations use GitHub's protected math syntax: ```` ```math ```` blocks for display equations and `` $`...`$ `` for inline math, so the Markdown parser does not alter the LaTeX.
 - Python examples were run and checked against the worked answers; Julia examples follow the same logic but were not run.
 - Bloomberg Terminal sections are drafts to be verified on a Terminal; mnemonics and field names change over time.
 - CFA-style questions are original and are not CFA Institute material.

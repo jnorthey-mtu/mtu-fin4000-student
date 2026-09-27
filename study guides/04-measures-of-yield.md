@@ -16,13 +16,17 @@ Worked bond used throughout: 10-year Treasury-style note, 5% coupon paid semiann
 - **Nominal vs real.** Any yield stated in dollars, with no inflation adjustment. A 5.66% YTM is a nominal yield in this sense.
 - A third use: an annual rate quoted with more frequent compounding (5.66% compounded semiannually) is a "nominal annual rate," as opposed to the effective annual rate.
 
-$$\text{Coupon (nominal) yield} = \frac{C}{F}$$
+```math
+\text{Coupon (nominal) yield} = \frac{C}{F}
+```
 
 ## 2. Current yield
 
 Annual coupon divided by current price. It measures cash income only.
 
-$$CY = \frac{C}{P} = \frac{5}{95} = 5.263\%$$
+```math
+CY = \frac{C}{P} = \frac{5}{95} = 5.263\%
+```
 
 - **Use:** income-focused investors comparing cash payout; quick screen.
 - **Blind spots:** ignores the gain or loss as price pulls to par, ignores the timing of cash flows and reinvestment, and is meaningless for zeros (CY = 0).
@@ -31,17 +35,23 @@ $$CY = \frac{C}{P} = \frac{5}{95} = 5.263\%$$
 
 The single discount rate that sets the present value of all promised cash flows equal to the price. It is the bond's internal rate of return.
 
-$$P = \sum_{k=1}^{n} \frac{C/2}{\left(1 + \frac{y}{2}\right)^{k}} + \frac{F}{\left(1 + \frac{y}{2}\right)^{n}}$$
+```math
+P = \sum_{k=1}^{n} \frac{C/2}{\left(1 + \frac{y}{2}\right)^{k}} + \frac{F}{\left(1 + \frac{y}{2}\right)^{n}}
+```
 
 For the worked bond:
 
-$$95 = \sum_{k=1}^{20} \frac{2.5}{\left(1 + \frac{y}{2}\right)^{k}} + \frac{100}{\left(1 + \frac{y}{2}\right)^{20}} \quad\Rightarrow\quad y = 5.662\%$$
+```math
+95 = \sum_{k=1}^{20} \frac{2.5}{\left(1 + \frac{y}{2}\right)^{k}} + \frac{100}{\left(1 + \frac{y}{2}\right)^{20}} \quad\Rightarrow\quad y = 5.662\%
+```
 
 There is no closed form; it is solved by iteration.
 
-Between coupon dates, use the dirty (full) price and a fractional first period, where $w$ = days to next coupon ÷ days in the coupon period:
+Between coupon dates, use the dirty (full) price and a fractional first period, where $`w`$ = days to next coupon ÷ days in the coupon period:
 
-$$P_{dirty} = \sum_{k=1}^{n} \frac{CF_k}{\left(1 + \frac{y}{2}\right)^{k-1+w}}$$
+```math
+P_{dirty} = \sum_{k=1}^{n} \frac{CF_k}{\left(1 + \frac{y}{2}\right)^{k-1+w}}
+```
 
 **Assumptions built into YTM:**
 
@@ -59,7 +69,9 @@ $$P_{dirty} = \sum_{k=1}^{n} \frac{CF_k}{\left(1 + \frac{y}{2}\right)^{k-1+w}}$$
 
 Same equation, with the call date as maturity and the call price as the final payment.
 
-$$P = \sum_{k=1}^{n_c} \frac{C/2}{\left(1 + \frac{y_c}{2}\right)^{k}} + \frac{CP}{\left(1 + \frac{y_c}{2}\right)^{n_c}}$$
+```math
+P = \sum_{k=1}^{n_c} \frac{C/2}{\left(1 + \frac{y_c}{2}\right)^{k}} + \frac{CP}{\left(1 + \frac{y_c}{2}\right)^{n_c}}
+```
 
 - **Yield to worst (YTW):** the lowest of YTM and the yield to every call date. It is the standard quote for callable bonds.
 - Example: the 5% note at a premium price of 105, callable in 5 years at 101. YTM = 4.377%, YTC = 4.067%, so **YTW = 4.067%**. Premium callables usually yield to the call.
@@ -67,11 +79,13 @@ $$P = \sum_{k=1}^{n_c} \frac{C/2}{\left(1 + \frac{y_c}{2}\right)^{k}} + \frac{CP
 
 ## 5. Realized (horizon) yield
 
-The return actually earned, given an assumed reinvestment rate $r$ and holding period. It fixes the third YTM assumption.
+The return actually earned, given an assumed reinvestment rate $`r`$ and holding period. It fixes the third YTM assumption.
 
-$$FV = \sum_{k=1}^{n} \frac{C}{2}\left(1 + \frac{r}{2}\right)^{n-k} + F \qquad y_{realized} = 2\left[\left(\frac{FV}{P}\right)^{1/n} - 1\right]$$
+```math
+FV = \sum_{k=1}^{n} \frac{C}{2}\left(1 + \frac{r}{2}\right)^{n-k} + F \qquad y_{realized} = 2\left[\left(\frac{FV}{P}\right)^{1/n} - 1\right]
+```
 
-Example: the worked bond held to maturity with coupons reinvested at 3%. $FV = 157.81$, so **realized yield = 5.140%**, not 5.662%. The gap is reinvestment risk. A zero has none: its YTM is its realized yield.
+Example: the worked bond held to maturity with coupons reinvested at 3%. $`FV = 157.81`$, so **realized yield = 5.140%**, not 5.662%. The gap is reinvestment risk. A zero has none: its YTM is its realized yield.
 
 ## 6. Compounding conventions
 
@@ -80,23 +94,29 @@ Example: the worked bond held to maturity with coupons reinvested at 3%. $FV = 1
 | Bond-equivalent yield (BEY) | Semiannual rate × 2 | 5.662% | US Treasury and corporate quotes |
 | Effective annual yield (EAY) | (1 + BEY/2)² − 1 | 5.742% | Comparing with annual-pay bonds (Bunds, most Eurobonds) and other investments |
 
-$$EAY = \left(1 + \frac{BEY}{2}\right)^{2} - 1 \qquad BEY = 2\left[(1 + EAY)^{1/2} - 1\right]$$
+```math
+EAY = \left(1 + \frac{BEY}{2}\right)^{2} - 1 \qquad BEY = 2\left[(1 + EAY)^{1/2} - 1\right]
+```
 
 Never compare yields quoted on different compounding bases. T-bills add two more conventions: the bank discount yield (on face value, 360-day year) and the investment yield (on price, 365-day year).
 
 ## 7. Real yield
 
-The return after inflation. The Fisher relation links nominal yield $i$, real yield $r$ and inflation $\pi$:
+The return after inflation. The Fisher relation links nominal yield $`i`$, real yield $`r`$ and inflation $`\pi`$:
 
-$$(1 + i) = (1 + r)(1 + \pi) \qquad r = \frac{1 + i}{1 + \pi} - 1 \approx i - \pi$$
+```math
+(1 + i) = (1 + r)(1 + \pi) \qquad r = \frac{1 + i}{1 + \pi} - 1 \approx i - \pi
+```
 
-Example: nominal 4.5%, inflation 2.5%. Exact real yield $= 1.045 / 1.025 - 1 = 1.951\%$; the approximation gives 2.0%. The gap grows when rates are high.
+Example: nominal 4.5%, inflation 2.5%. Exact real yield $`= 1.045 / 1.025 - 1 = 1.951\%`$; the approximation gives 2.0%. The gap grows when rates are high.
 
 - **Ex-ante vs ex-post:** real yield computed from expected inflation is a forecast; from realized inflation it is a result.
 - **TIPS real yield:** the YTM of a TIPS computed from its real (quoted) price and real coupon. It is the market-observed real rate. Same formula as section 3.
 - **Breakeven inflation:** the inflation rate that equalizes a nominal Treasury and a TIPS of the same maturity.
 
-$$\pi_{BE} = \frac{1 + i_{nominal}}{1 + r_{TIPS}} - 1 \approx i_{nominal} - r_{TIPS}$$
+```math
+\pi_{BE} = \frac{1 + i_{nominal}}{1 + r_{TIPS}} - 1 \approx i_{nominal} - r_{TIPS}
+```
 
 Example: nominal 4.30%, TIPS 2.00%, breakeven ≈ 2.30%. Breakeven is a rough, not pure, inflation forecast. It also contains an inflation risk premium, the TIPS liquidity discount, the 3-month CPI lag and the deflation floor's value.
 
@@ -114,7 +134,9 @@ Example: nominal 4.30%, TIPS 2.00%, breakeven ≈ 2.30%. Breakeven is a rough, n
 
 One more adjustment for munis:
 
-$$\text{Tax-equivalent yield} = \frac{\text{Tax-exempt yield}}{1 - t_{marginal}}$$
+```math
+\text{Tax-equivalent yield} = \frac{\text{Tax-exempt yield}}{1 - t_{marginal}}
+```
 
 ## 9. Tools: the worked bond on every platform
 
@@ -234,8 +256,8 @@ real = 1.045 / 1.025 - 1
 
 1. An 8-year 7% semiannual bond trades at 108. Find CY, YTM and EAY. *6.481%, 5.739%, 5.821%.*
 2. Check the ordering rule on question 1. *Premium bond: coupon 7% > CY 6.48% > YTM 5.74%.*
-3. Nominal yield 6.0%, expected inflation 3.5%. Exact real yield? *Answer:* $1.06 / 1.035 - 1 = 2.415\%$.
-4. A 10-year Treasury yields 4.30% and the 10-year TIPS 2.00%. Exact breakeven? *Answer:* $1.043 / 1.02 - 1 = 2.255\%$.
+3. Nominal yield 6.0%, expected inflation 3.5%. Exact real yield? *Answer:* $`1.06 / 1.035 - 1 = 2.415\%`$.
+4. A 10-year Treasury yields 4.30% and the 10-year TIPS 2.00%. Exact breakeven? *Answer:* $`1.043 / 1.02 - 1 = 2.255\%`$.
 5. Why is the worked bond's realized yield at 3% reinvestment below its YTM? *Coupons earn 3%, not 5.66%, so the terminal value falls short.*
 6. A callable premium bond has YTM 4.38% and YTC 4.07%. Which do you quote, and why? *YTC, the yield to worst: the issuer is likely to call a bond trading above its call price.*
 
@@ -270,10 +292,10 @@ Original questions in the CFA Level I format (three choices, one correct). Not C
 
 **Answer key**
 
-1. B. $6 / 90 = 6.67\%$.
+1. B. $`6 / 90 = 6.67\%`$.
 2. A. The discount amortizes up to par, which YTM captures and current yield does not.
-3. B. $1.03^{2} - 1 = 6.09\%$.
-4. A. $1.05 / 1.03 - 1 = 1.94\%$; B is the approximation.
+3. B. $`1.03^{2} - 1 = 6.09\%`$.
+4. A. $`1.05 / 1.03 - 1 = 1.94\%`$; B is the approximation.
 5. C. For a premium callable, the yield to call is usually the lowest, so it is the yield to worst.
 6. A. YTM assumes reinvestment at the YTM itself.
 

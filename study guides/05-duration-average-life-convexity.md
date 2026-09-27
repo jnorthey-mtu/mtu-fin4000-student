@@ -12,15 +12,19 @@ Worked bond (from Study Guide 4): 10-year, 5% semiannual coupon, price 95, YTM 5
 
 The weighted-average time to receive the bond's cash flows, where each weight is that cash flow's share of the price. Measured in years.
 
-$$D_{mac} = \sum_{t} t \times w_t \qquad w_t = \frac{CF_t / (1 + y)^{t}}{P}$$
+```math
+D_{mac} = \sum_{t} t \times w_t \qquad w_t = \frac{CF_t / (1 + y)^{t}}{P}
+```
 
-For semiannual bonds, compute with $t$ in half-years and $y$ per half-year, then divide the result by 2.
+For semiannual bonds, compute with $`t`$ in half-years and $`y`$ per half-year, then divide the result by 2.
 
-Closed form at a coupon date, with $y$ and $c$ per period and $T$ periods:
+Closed form at a coupon date, with $`y`$ and $`c`$ per period and $`T`$ periods:
 
-$$D_{mac} = \frac{1 + y}{y} - \frac{(1 + y) + T(c - y)}{c\left[(1 + y)^{T} - 1\right] + y}$$
+```math
+D_{mac} = \frac{1 + y}{y} - \frac{(1 + y) + T(c - y)}{c\left[(1 + y)^{T} - 1\right] + y}
+```
 
-Worked bond: $y = 2.8308\%$, $c = 2.5\%$, $T = 20$, giving 15.855 half-years = **7.927 years**.
+Worked bond: $`y = 2.8308\%`$, $`c = 2.5\%`$, $`T = 20`$, giving 15.855 half-years = **7.927 years**.
 
 Check against the book: an 8% coupon, 2-year bond at a 10% yield has duration 1.8852 years; a 2-year zero has duration 2.0.
 
@@ -28,9 +32,11 @@ Check against the book: an 8% coupon, 2-year bond at a 10% yield has duration 1.
 
 The percentage price change for a 1-unit change in yield. This is the number used for risk.
 
-$$D^{*} = \frac{D_{mac}}{1 + y/k} \qquad \frac{\Delta P}{P} \approx -D^{*} \, \Delta y$$
+```math
+D^{*} = \frac{D_{mac}}{1 + y/k} \qquad \frac{\Delta P}{P} \approx -D^{*} \, \Delta y
+```
 
-Here $k$ is payments per year. Worked bond: $7.927 / 1.028308 = 7.709$. A 100 bp rise predicts a 7.71% price fall.
+Here $`k`$ is payments per year. Worked bond: $`7.927 / 1.028308 = 7.709`$. A 100 bp rise predicts a 7.71% price fall.
 
 ## 3. Rules for duration
 
@@ -42,41 +48,53 @@ Here $k$ is payments per year. Worked bond: $7.927 / 1.028308 = 7.709$. A 100 bp
 | 4 | Holding coupon and maturity fixed, lower yield means higher duration | Distant cash flows are discounted less, so they weigh more |
 | 5 | A level perpetuity has duration (1 + y) ÷ y | At 10%, duration = 11 years |
 
-$$D_{perpetuity} = \frac{1 + y}{y}$$
+```math
+D_{perpetuity} = \frac{1 + y}{y}
+```
 
 ## 4. Dollar duration and DV01
 
 Traders manage dollars, not percentages.
 
-$$\text{Dollar duration} = D^{*} \times P \qquad DV01 = D^{*} \times P \times 0.0001$$
+```math
+\text{Dollar duration} = D^{*} \times P \qquad DV01 = D^{*} \times P \times 0.0001
+```
 
-- Worked bond: $DV01 = 7.709 \times 95 \times 0.0001 = 0.0732$ per 100 face. For \$10 million face, a 1 bp rise costs about **\$7,324**.
+- Worked bond: $`DV01 = 7.709 \times 95 \times 0.0001 = 0.0732`$ per 100 face. For \$10 million face, a 1 bp rise costs about **\$7,324**.
 - DV01 is also called PVBP (price value of a basis point) or BPV. DV01s add across positions, which makes them the standard unit for limits and hedges.
 
 ## 5. Effective duration
 
 For bonds whose cash flows change when rates change (callables, puttables, MBS), YTM-based duration is wrong. Reprice with a model at yields shifted up and down:
 
-$$D_{eff} = \frac{P_{-} - P_{+}}{2 \, P_{0} \, \Delta y}$$
+```math
+D_{eff} = \frac{P_{-} - P_{+}}{2 \, P_{0} \, \Delta y}
+```
 
-Worked bond with $\Delta y$ = 50 bp: $P_{-} = 98.749$, $P_{+} = 91.423$, so
+Worked bond with $`\Delta y`$ = 50 bp: $`P_{-} = 98.749`$, $`P_{+} = 91.423`$, so
 
-$$D_{eff} = \frac{98.749 - 91.423}{2 \times 95 \times 0.005} = 7.712$$
+```math
+D_{eff} = \frac{98.749 - 91.423}{2 \times 95 \times 0.005} = 7.712
+```
 
-matching modified duration for an option-free bond. For a callable, $P_{-}$ is capped near the call price, so effective duration falls well below modified duration.
+matching modified duration for an option-free bond. For a callable, $`P_{-}`$ is capped near the call price, so effective duration falls well below modified duration.
 
 ## 6. Portfolio and key rate duration
 
 - **Portfolio duration** is the value-weighted average of the holdings' durations. A strictly correct figure uses one common yield, but the weighted average is standard practice.
 - **Key rate durations** measure sensitivity to one point on the curve (2, 5, 10, 30 years) at a time. They capture twists and steepening that a single duration, which assumes a parallel shift, misses.
 
-$$D_{portfolio} = \sum_{i} w_i \, D_i \qquad w_i = \frac{MV_i}{\sum_j MV_j}$$
+```math
+D_{portfolio} = \sum_{i} w_i \, D_i \qquad w_i = \frac{MV_i}{\sum_j MV_j}
+```
 
 ## 7. Weighted average life (WAL)
 
 The average time until each dollar of **principal** is repaid. It ignores interest and discounting, so it measures timing of principal, not price risk.
 
-$$WAL = \frac{\sum_{t} t \times \text{Principal}_t}{\sum_{t} \text{Principal}_t}$$
+```math
+WAL = \frac{\sum_{t} t \times \text{Principal}_t}{\sum_{t} \text{Principal}_t}
+```
 
 | Instrument | WAL | Note |
 | --- | --- | --- |
@@ -97,17 +115,23 @@ $$WAL = \frac{\sum_{t} t \times \text{Principal}_t}{\sum_{t} \text{Principal}_t}
 
 The price-yield curve is convex, so duration alone underestimates price gains and overstates price losses. Convexity measures that curvature.
 
-$$C = \frac{1}{P\,(1 + y)^{2}} \sum_{t} \frac{CF_t}{(1 + y)^{t}}\left(t^{2} + t\right)$$
+```math
+C = \frac{1}{P\,(1 + y)^{2}} \sum_{t} \frac{CF_t}{(1 + y)^{t}}\left(t^{2} + t\right)
+```
 
-With $t$ in half-years and $y$ per half-year, divide the result by 4 to annualize. Worked bond: **C = 72.41**. For a zero:
+With $`t`$ in half-years and $`y`$ per half-year, divide the result by 4 to annualize. Worked bond: **C = 72.41**. For a zero:
 
-$$C_{zero} = \frac{T\,(T + 0.5)}{(1 + y/2)^{2}}$$
+```math
+C_{zero} = \frac{T\,(T + 0.5)}{(1 + y/2)^{2}}
+```
 
-A 30-year strip at 4.5% has $C = 875$.
+A 30-year strip at 4.5% has $`C = 875`$.
 
 Price change with convexity:
 
-$$\frac{\Delta P}{P} \approx -D^{*}\,\Delta y + \tfrac{1}{2}\,C\,(\Delta y)^{2}$$
+```math
+\frac{\Delta P}{P} \approx -D^{*}\,\Delta y + \tfrac{1}{2}\,C\,(\Delta y)^{2}
+```
 
 | Yield change | Actual price change | Duration only | Duration + convexity |
 | --- | --- | --- | --- |
@@ -120,11 +144,15 @@ Duration alone is off by 1.4–1.6 points at ±200 bp; adding convexity cuts the
 
 **Effective convexity** for bonds with options:
 
-$$C_{eff} = \frac{P_{-} + P_{+} - 2P_{0}}{P_{0}\,(\Delta y)^{2}}$$
+```math
+C_{eff} = \frac{P_{-} + P_{+} - 2P_{0}}{P_{0}\,(\Delta y)^{2}}
+```
 
 Worked bond at ±50 bp:
 
-$$C_{eff} = \frac{98.749 + 91.423 - 190}{95 \times 0.005^{2}} = 72.4$$
+```math
+C_{eff} = \frac{98.749 + 91.423 - 190}{95 \times 0.005^{2}} = 72.4
+```
 
 **Why investors like convexity:** for two bonds with equal duration, the more convex one gains more when rates fall and loses less when rates rise. The market charges for it with a lower yield.
 
@@ -140,16 +168,20 @@ $$C_{eff} = \frac{98.749 + 91.423 - 190}{95 \times 0.005^{2}} = 72.4$$
 
 Example: a \$1,000,000 liability due in 7 years, with rates flat at 10% (annual). PV = \$513,158; duration = 7. Fund it with a 3-year zero (duration 3) and a perpetuity (duration 11):
 
-$$w \times 3 + (1 - w) \times 11 = 7 \quad\Rightarrow\quad w = 0.5$$
+```math
+w \times 3 + (1 - w) \times 11 = 7 \quad\Rightarrow\quad w = 0.5
+```
 
 Buy \$256,579 of each. Durations drift at different speeds as time passes and rates move, so the portfolio must be **rebalanced**. Buying a 7-year zero (cash flow matching, dedication) avoids rebalancing entirely; that is the strip use case from Study Guide 1.
 
 **DV01 hedging.** The hedge ratio is:
 
-$$\text{Hedge ratio} = \frac{DV01_{position}}{DV01_{hedge}}$$
+```math
+\text{Hedge ratio} = \frac{DV01_{position}}{DV01_{hedge}}
+```
 
 - Position: \$10 million face of the worked bond, DV01 \$7,324.
-- Hedge with a 30-year strip at 4.5%: $DV01 = 29.34 \times 26.315 \times 0.0001 = 0.0772$ per 100.
+- Hedge with a 30-year strip at 4.5%: $`DV01 = 29.34 \times 26.315 \times 0.0001 = 0.0772`$ per 100.
 - Short about **\$9.49 million face** of the strip (market value about \$2.50 million).
 - The hedge is exact only for a parallel shift. It leaves curve risk (10-year vs 30-year) and a convexity mismatch (72 vs 875). Key rate DV01s or a Treasury futures hedge in the 10-year sector reduce that residual risk.
 
@@ -272,9 +304,9 @@ conv = sum(pv .* t .* (t .+ 1)) / (P * (1 + y / 2)^2) / 4
 ## 11. Practice set
 
 1. A 5-year 6% semiannual bond trades at par. Find Macaulay and modified duration and convexity. *4.393, 4.265, 21.77.*
-2. Duration of a perpetuity at 8%? *Answer:* $1.08 / 0.08 = 13.5$ years.
-3. Estimate the worked bond's price change for +50 bp with duration and convexity. Compare with the actual change. *Answer:* $-7.709 \times 0.005 + \tfrac{1}{2} \times 72.41 \times 0.005^{2} = -3.764\%$; actual −3.765%.
-4. Immunize a 5-year liability using 2-year and 10-year zeros. Weights? *Answer:* $w \times 2 + (1 - w) \times 10 = 5$, so 62.5% in the 2-year and 37.5% in the 10-year.
+2. Duration of a perpetuity at 8%? *Answer:* $`1.08 / 0.08 = 13.5`$ years.
+3. Estimate the worked bond's price change for +50 bp with duration and convexity. Compare with the actual change. *Answer:* $`-7.709 \times 0.005 + \tfrac{1}{2} \times 72.41 \times 0.005^{2} = -3.764\%`$; actual −3.765%.
+4. Immunize a 5-year liability using 2-year and 10-year zeros. Weights? *Answer:* $`w \times 2 + (1 - w) \times 10 = 5`$, so 62.5% in the 2-year and 37.5% in the 10-year.
 5. A 10-year bond retires 25% of principal in each of years 7–10. WAL? *(7 + 8 + 9 + 10) ÷ 4 = 8.5 years.*
 6. Why does a 30-year strip need more rebalancing in a DV01 hedge than a 10-year note? *Its convexity (875 vs 72) makes its DV01 change much faster as rates move.*
 7. Why do MBS show negative convexity? *Falling rates speed up prepayments, returning principal at par just when the bond would rise above it.*
@@ -310,11 +342,11 @@ Original questions in the CFA Level I format (three choices, one correct). Not C
 
 **Answer key**
 
-1. C. $-7.0 \times 0.01 + \tfrac{1}{2} \times 60 \times 0.01^{2} = -7.00\% + 0.30\% = -6.70\%$.
+1. C. $`-7.0 \times 0.01 + \tfrac{1}{2} \times 60 \times 0.01^{2} = -7.00\% + 0.30\% = -6.70\%`$.
 2. B. A zero's duration equals its maturity, the longest here.
-3. B. $1.05 / 0.05 = 21$.
-4. B. $(102.00 - 98.20) / (2 \times 100 \times 0.005) = 3.8$.
-5. A. $6.0 \times 98 \times 0.0001 = 0.0588$ per 100; × 50,000 = \$2,940.
+3. B. $`1.05 / 0.05 = 21`$.
+4. B. $`(102.00 - 98.20) / (2 \times 100 \times 0.005) = 3.8`$.
+5. A. $`6.0 \times 98 \times 0.0001 = 0.0588`$ per 100; × 50,000 = \$2,940.
 6. B. Negative convexity: the call caps price appreciation near the call price.
 
 ## 13. Bloomberg Terminal exercises (draft: verify on the campus Terminal)
