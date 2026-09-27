@@ -17,7 +17,7 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and a supp
 uv sync
 ```
 
-`uv sync` creates `.venv` and installs the dependencies from `pyproject.toml` and `uv.lock` (when present). In VS Code, install the Python and Jupyter extensions, open a Python notebook, and select the `.venv` Python environment as its kernel.
+`uv sync` creates `.venv` and installs the dependencies from `pyproject.toml` and `uv.lock` (when present). In VS Code, install the Python and Jupyter extensions, then use **Python: Select Interpreter** to select this repository's `.venv`. Open a Python notebook and select the `.venv` Python environment as its kernel. For Julia notebooks, this lets the Jupyter extension discover the registered Julia kernels.
 
 ### Julia
 
