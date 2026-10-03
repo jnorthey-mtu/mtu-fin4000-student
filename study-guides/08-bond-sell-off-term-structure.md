@@ -158,9 +158,9 @@ A par yield is a blend, because a coupon bond pays cash at several dates. A spot
 1. **1-year:** a single payment, so the par yield is the spot rate: s₁ = 4.55%.
 2. **2-year:** the bond pays 4.90 after year 1 and 104.90 after year 2, and it prices at 100. Discount the first payment at s₁, then solve for s₂:
 
-```latex
+$$
 100 = \frac{4.90}{1.0455} + \frac{104.90}{(1+s_2)^2} \Rightarrow s_2 \approx 4.91\%
-```
+$$
 
 3. **3-year and beyond:** repeat, using the earlier spot rates to discount the early payments and solving for the next unknown.
 
@@ -170,21 +170,27 @@ At two years the gap is small (4.90% par vs. 4.91% spot), but it widens at longe
 
 The general form: locking in an n-year deposit must earn the same as an (n-1)-year deposit rolled into a one-year deposit.
 
-```latex
+$$
 (1+y_n)^n = (1+y_{n-1})^{n-1}(1+f_n)
-```
+$$
 
-```latex
+$$
 f_n = \frac{(1+y_n)^n}{(1+y_{n-1})^{n-1}} - 1
-```
+$$
 
 Here yₙ is the n-year spot rate, fₙ is the one-year forward rate for year n, and n is the number of years. For a forward covering years a to b:
 
-```latex
+$$
 f_{a,b} = \left(\frac{(1+y_b)^b}{(1+y_a)^a}\right)^{1/(b-a)} - 1
-```
+$$
 
-The forward rate is the rate that makes you indifferent between a long deposit and rolling shorter ones, and it is computed from spot rates. For year two: the 2-year spot rate is 4.91%, so (1.0491²) ÷ 1.0455 − 1 ≈ 5.27%. Rough figures, using annual compounding:
+The forward rate is the rate that makes you indifferent between a long deposit and rolling shorter ones, and it is computed from spot rates. For year two: the 2-year spot rate is 4.91%, so the forward is:
+
+$$
+f_{1,2} = \frac{(1.0491)^2}{1.0455} - 1 \approx 5.27\%
+$$
+
+Rough figures, using annual compounding:
 
 | Forward period | Implied rate | Reading |
 |----------------|--------------|---------|
@@ -210,9 +216,9 @@ An upward slope can reflect higher expected short rates, a higher term premium, 
 
 The price of a bond when its yield to maturity is known, with m coupon periods per annum, is the present value of the coupons plus the present value of the face value, all discounted at the periodic yield y/m:
 
-```latex
+$$
 P_0 = \frac{C}{m} \cdot \frac{1-\left(1+\frac{y}{m}\right)^{-mT}}{\frac{y}{m}} + \frac{F}{\left(1+\frac{y}{m}\right)^{mT}}
-```
+$$
 
 Where:
 
@@ -226,17 +232,17 @@ Where:
 
 A 10-year Treasury has a 4.625% semiannual coupon. Its yield is now 5.26%, so the price is about 95.11, and a buyer who paid par is down about 4.9% on paper with no loss if held to maturity. Using n = 20, coupon = 2.3125, and y/m = 2.63% per half-year:
 
-```latex
+$$
 P = 2.3125 \times \frac{1 - 1.0263^{-20}}{0.0263} + 100 \times 1.0263^{-20} \approx 35.61 + 59.50 \approx 95.11
-```
+$$
 
 ### Example B: Real return from holding to maturity
 
 Buy at a 5.29% yield. If inflation averages 3.0%, the real return is about 2.2%. If inflation averages 5.5%, it is about −0.2%: no default and no price loss, yet purchasing power is lost.
 
-```latex
+$$
 r = \frac{1 + R}{1 + i} - 1 = \frac{1.0529}{1 + i} - 1
-```
+$$
 
 Here R is the nominal yield (0.0529), r is the real return, and i is the average annual inflation rate, following BKM Section 5.2.
 
