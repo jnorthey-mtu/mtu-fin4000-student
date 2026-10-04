@@ -1,0 +1,152 @@
+{
+  "general/gen-01-treasury-strips.md": {
+    "title": "Treasury STRIPS",
+    "chapters": "14",
+    "summary": "What STRIPS are, why they are used, quoting, pricing, taxation, TIPS strips"
+  },
+  "general/gen-02-bootstrapping-the-spot-curve.md": {
+    "title": "Bootstrapping the Spot Curve",
+    "chapters": "15",
+    "summary": "Discount factors, spot and forward rates, par vs spot vs forward curves"
+  },
+  "general/gen-03-quantitative-tools.md": {
+    "title": "Quantitative Tools",
+    "chapters": "14–16",
+    "summary": "TI BA II Plus Professional, HP 12C, Excel, Python libraries, Julia"
+  },
+  "general/gen-04-measures-of-yield.md": {
+    "title": "Measures of Yield",
+    "chapters": "14",
+    "summary": "Current yield, YTM, YTC/YTW, realized yield, BEY vs EAY, real yield, breakeven"
+  },
+  "general/gen-05-duration-average-life-convexity.md": {
+    "title": "Duration, Average Life and Convexity",
+    "chapters": "16",
+    "summary": "Macaulay, modified and effective duration, DV01, WAL, convexity, immunization, hedging"
+  },
+  "general/gen-06-us-treasuries.md": {
+    "title": "U.S. Treasuries",
+    "chapters": "14",
+    "summary": "Securities, pricing, auctions, secondary market, on/off-the-run, TreasuryDirect, ladders"
+  },
+  "general/gen-07-callable-putable-convertible-bonds.md": {
+    "title": "Callable, Putable and Convertible Bonds",
+    "chapters": "14, 20",
+    "summary": "Options review, embedded options, binomial tree pricing, OAS"
+  },
+  "general/gen-08-julia-for-finance.md": {
+    "title": "Julia for Finance",
+    "chapters": "",
+    "summary": "Why Julia, learning path, environment setup, translating Python finance tasks"
+  },
+  "mini/mini-12-flat-rate-vs-term-structure.md": {
+    "title": "Flat Rate vs. Term Structure",
+    "chapters": "14–15",
+    "summary": "When the annuity form applies; YTM → price vs. spot rates → price → YTM; coupon effect; STRIPS arbitrage; reinvestment assumption"
+  },
+  "current-events/ce-03-why-bond-yields-are-rising.md": {
+    "title": "Why Bond Yields Are Rising",
+    "chapters": "14–15",
+    "summary": "Ten market forces behind the 2026 sell-off, credit risk, and the term structure"
+  },
+  "mini/mini-01-real-vs-financial-assets.md": {
+    "title": "Real vs. Financial Assets",
+    "chapters": "1",
+    "summary": "Real vs. financial assets, why financial assets net out, tracing transactions"
+  },
+  "mini/mini-02-short-sales-and-margin-calls.md": {
+    "title": "Short Sales and Margin Calls",
+    "chapters": "3",
+    "summary": "Short-sale margin account, margin call price, cash to meet a call, dividends and returns"
+  },
+  "mini/mini-03-mutual-fund-costs.md": {
+    "title": "Mutual Fund Costs",
+    "chapters": "4",
+    "summary": "Loads, 12b-1 fees, share classes, turnover cost, break-even holding period"
+  },
+  "mini/mini-04-arithmetic-vs-geometric-returns.md": {
+    "title": "Arithmetic vs. Geometric Returns; Real vs. Nominal Rates",
+    "chapters": "5",
+    "summary": "Arithmetic, geometric and dollar-weighted returns; Fisher equation; after-tax real return"
+  },
+  "mini/mini-05-yield-to-call-and-realized-compound-yield.md": {
+    "title": "Yield to Call and Realized Compound Yield",
+    "chapters": "14",
+    "summary": "YTC, yield to worst, realized compound yield, horizon return"
+  },
+  "mini/mini-06-forward-rates-and-term-structure-theories.md": {
+    "title": "Forward Rates and Term Structure Theories",
+    "chapters": "15",
+    "summary": "Spot and forward rates, expectations and liquidity preference theories"
+  },
+  "mini/mini-07-convexity-and-duration-convexity.md": {
+    "title": "Convexity and the Duration-Convexity Approximation",
+    "chapters": "16",
+    "summary": "Macaulay and modified duration, convexity, price-change approximation, negative convexity"
+  },
+  "mini/mini-08-liability-timing-with-strips.md": {
+    "title": "Liability Timing with STRIPS",
+    "chapters": "14, 16",
+    "summary": "Cash-flow matching vs. immunization with STRIPS, phantom income"
+  },
+  "mini/mini-09-business-cycle-and-sector-rotation.md": {
+    "title": "The Business Cycle and Sector Rotation",
+    "chapters": "17",
+    "summary": "Cycle phases, cyclical vs. defensive, operating leverage, economic indicators (final exam)"
+  },
+  "mini/mini-10-two-stage-ddm-and-pvgo.md": {
+    "title": "The Two-Stage DDM and PVGO",
+    "chapters": "18",
+    "summary": "Constant-growth DDM, sustainable growth, PVGO, two-stage DDM, P/E (final exam)"
+  },
+  "mini/mini-11-bond-issuance-underwriting-and-oid.md": {
+    "title": "Bond Issuance, Underwriting, and OID",
+    "chapters": "3 (with 2, 14)",
+    "summary": "Primary vs. secondary market, underwriting, shelf registration, Treasury auctions, OID"
+  },
+  "mini/mini-13-jupyter-notebook-architecture.md": {
+    "title": "Jupyter Notebook Architecture",
+    "chapters": "",
+    "summary": "Front end, kernel and memory; hidden state; Markdown and LaTeX; habits and exercise"
+  },
+  "mini/mini-14-etf-in-kind-creation-redemption.md": {
+    "title": "ETF In-Kind Creation/Redemption and Tax Avoidance",
+    "chapters": "4",
+    "summary": "Creation/redemption, in-kind tax treatment, heartbeat trades, Treasury announcement"
+  },
+  "mini/mini-15-sovereign-bond-yield-correlations.md": {
+    "title": "Sovereign Bond Yield Correlations",
+    "chapters": "",
+    "summary": "Yield comovement, euro-area contagion evidence, reading list, review questions"
+  },
+  "current-events/ce-01-treasury-supply-and-rising-yields.md": {
+    "title": "Treasury Supply and Rising Yields",
+    "chapters": "14–16",
+    "summary": "Treasury issuance and yields, term premium, Treasury and Fed responses, worked examples"
+  },
+  "current-events/ce-02-dividend-stocks-inflation-and-covered-calls.md": {
+    "title": "Dividend Stocks, Inflation and Covered Calls",
+    "chapters": "2 (also 5, 17, 18, 20, 21)",
+    "summary": "Covered-call income and breakeven, nominal vs. real income, put-call parity, options as investment or speculation"
+  },
+  "current-events/ce-05-treasury-buybacks-and-bond-yields.md": {
+    "title": "Treasury Buybacks and Bond Yields",
+    "chapters": "14–16",
+    "summary": "Buyback mechanics vs. QE, yield channels, TGA, duration and convexity primer, sustainability"
+  },
+  "supplements/supp-01-nav-and-etf-arbitrage.md": {
+    "title": "NAV and ETF Arbitrage",
+    "chapters": "4",
+    "summary": "NAV from SEC filings, ETF creation/redemption arbitrage, who can arbitrage, in-kind tax treatment (IRC §311(b), §852(b)(6))"
+  },
+  "current-events/ce-04-yen-carry-trade-and-treasury-roles.md": {
+    "title": "Yen Carry Trade in the Bond Market",
+    "chapters": "14–16",
+    "summary": "Carry-trade return and break-even, BoJ policy levers, U.S. Treasury yen intervention and FIMA, documented vs. inferred motives"
+  },
+  "general/gen-09-ipo-process-and-underwriters-role.md": {
+    "title": "The IPO Process and the Underwriter's Role",
+    "chapters": "2–3",
+    "summary": "Primary vs. secondary market, S-1 and roadshow, firm commitment vs. best efforts, spread, greenshoe, underpricing; Facebook, Snowflake, SpaceX and Dell cases"
+  }
+}

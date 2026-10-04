@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 Each yield measure answers a different question. Coupon yield answers what the bond promises per year on its face value. Current yield answers what it pays in cash on today's price. Yield to maturity answers what it returns if held to maturity. Real yield answers what that return is worth after inflation.
 

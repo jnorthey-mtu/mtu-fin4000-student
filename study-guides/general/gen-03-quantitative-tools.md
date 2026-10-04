@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 The same three tasks run through every tool: price a strip, compute its yield and duration, and do one bootstrap step. Calculators handle single bonds; spreadsheets and code build whole curves.
 

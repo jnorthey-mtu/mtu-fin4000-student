@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 A STRIPS is a single Treasury cash flow sold on its own: one known dollar amount, paid on one known date, with nothing in between. They exist so investors can lock in today's spot rate for a specific date with no reinvestment risk.
 
