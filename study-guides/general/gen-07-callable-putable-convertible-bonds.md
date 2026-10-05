@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 Many bonds carry an option that lets the issuer or the investor change the cash flows. To value them you need two ideas: how an option works, and how interest rates move. This guide starts with the options review in Bodie Chapter 2, then applies it to callable, putable and convertible bonds.
 

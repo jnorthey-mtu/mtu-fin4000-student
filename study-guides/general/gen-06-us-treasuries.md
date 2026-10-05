@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 U.S. Treasury securities are the debt the federal government sells to fund itself. They are the world's benchmark risk-free asset, the collateral behind most repo lending, and the base of the curves used to price almost every other fixed income instrument. Outstanding marketable Treasuries passed \$31 trillion in June 2026.
 

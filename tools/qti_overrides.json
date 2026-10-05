@@ -1,0 +1,12 @@
+{
+  "mini-02-short-sales-and-margin-calls.md": {
+    "2": "An investor shorts 2,000 shares at \\$60 with 50% initial margin and 30% maintenance margin. The stock rises to \\$72. Her margin percentage is *closest* to:",
+    "3": "An investor shorts 2,000 shares at \\$60 with 50% initial margin and 30% maintenance margin. The stock rises to \\$72. How much cash must she deposit to restore the account to the 30% maintenance margin?"
+  },
+  "mini-12-flat-rate-vs-term-structure.md": {
+    "4": "The 1-year, 2-year and 3-year spot rates are 3%, 4% and 5%. The YTM of a 3-year, 4% annual-coupon bond is most likely:"
+  },
+  "ce-04-yen-carry-trade-and-treasury-roles.md": {
+    "2": "An investor borrows yen at 1.25% for one year, converts at 157.00 yen per dollar, and buys a one-year Treasury yielding 4.00%, with no currency hedge. The yen ends the year at 152.00. The return per yen borrowed is closest to:"
+  }
+}

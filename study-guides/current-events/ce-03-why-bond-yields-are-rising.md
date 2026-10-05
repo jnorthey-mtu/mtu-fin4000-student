@@ -7,6 +7,8 @@ Prepared October 1, 2026 · Market data as of Sept 30 – Oct 1, 2026 · Instruc
 
 ---
 
+[← All study guides](../../study-guide-index.md)
+
 ## 1. Learning Objectives
 
 After working through this guide you should be able to:
@@ -111,12 +113,12 @@ Some selling has nothing to do with views on inflation or rates. It comes from c
 | # | Reason | Summary (paraphrased) | Bucket | Teaching point |
 |---|--------|-----------------------|--------|----------------|
 | 1 | Resilient growth | Strong US and global activity, with PMIs pointing to the strongest manufacturing growth in years. This fuels inflation and the risk of further hikes, and it makes equities more attractive than bonds. Inflation erodes the coupons and principal bondholders will receive. | E, R | Bonds are not hedging equity risk when growth, not recession, is the threat. |
-| 2 | Higher commodity prices | Goldman Sachs calls the Iran war the largest oil supply shock ever. Brent peaked above $126 as flows through the Strait of Hormuz were choked, lifting fuel prices. Food prices are also climbing, partly on heatwaves. | E | Energy shocks feed headline inflation and raise the yield investors demand. |
+| 2 | Higher commodity prices | Goldman Sachs calls the Iran war the largest oil supply shock ever. Brent peaked above \$126 as flows through the Strait of Hormuz were choked, lifting fuel prices. Food prices are also climbing, partly on heatwaves. | E | Energy shocks feed headline inflation and raise the yield investors demand. |
 | 3 | Interest rate hikes | The Fed hiked in September and signals more may come. Australia and Japan have also hiked, and markets price increases in the UK, Canada, and Europe. A cited paper attributes about 90% of the rise in 10-year yields since Aug 2020 to payrolls reports and Fed speeches. Fewer refinancings also extend mortgage-bond duration, forcing some investors to sell Treasuries. | R, F | The short-rate outlook is the dominant driver of the long yield (expectations hypothesis). |
-| 4 | Hyperscaler borrowing and building | The AI infrastructure race has triggered a borrowing binge: over $400 billion of bonds sold globally this year, much of it in the US. Governments, M&A borrowers, and tech firms compete harder for investor cash, and T. Rowe Price expects the extra supply to lift high-quality government yields. | S | A bond's price depends on how many other bonds compete for the same buyers. |
-| 5 | Fiscal deficits and debts | Governments keep running deficits without tackling them. US debt recently passed $40 trillion, and OECD countries are expected to borrow about $18 trillion gross this year. Heavy supply pushes investors to demand higher yields. | S | Yields embed a premium for the issuer's fiscal path, not just expected short rates. |
-| 6 | Defense spending | Global military spending is at a record, driven by the Iran war, Ukraine, and re-armament in NATO, the Middle East, and Asia. The US defense budget crossed $1 trillion in fiscal 2026. Larger financing needs mean more bond sales. | S | A second channel from the war to yields, through borrowing rather than oil. |
-| 7 | The Japan effect | Japan's foreign securities holdings fell by a record $87.8 billion in August, likely from Treasury sales to support the yen. Separately, rising Japanese rates are forcing carry traders to sell government bonds they bought worldwide with cheap yen loans. | F | Yields can rise because of who must sell, not because expectations changed. |
+| 4 | Hyperscaler borrowing and building | The AI infrastructure race has triggered a borrowing binge: over \$400 billion of bonds sold globally this year, much of it in the US. Governments, M&A borrowers, and tech firms compete harder for investor cash, and T. Rowe Price expects the extra supply to lift high-quality government yields. | S | A bond's price depends on how many other bonds compete for the same buyers. |
+| 5 | Fiscal deficits and debts | Governments keep running deficits without tackling them. US debt recently passed \$40 trillion, and OECD countries are expected to borrow about \$18 trillion gross this year. Heavy supply pushes investors to demand higher yields. | S | Yields embed a premium for the issuer's fiscal path, not just expected short rates. |
+| 6 | Defense spending | Global military spending is at a record, driven by the Iran war, Ukraine, and re-armament in NATO, the Middle East, and Asia. The US defense budget crossed \$1 trillion in fiscal 2026. Larger financing needs mean more bond sales. | S | A second channel from the war to yields, through borrowing rather than oil. |
+| 7 | The Japan effect | Japan's foreign securities holdings fell by a record \$87.8 billion in August, likely from Treasury sales to support the yen. Separately, rising Japanese rates are forcing carry traders to sell government bonds they bought worldwide with cheap yen loans. | F | Yields can rise because of who must sell, not because expectations changed. |
 | 8 | Trade wars | Tariffs raise import costs and threaten to keep inflation elevated, reinforcing higher-for-longer rate expectations. Geopolitical fragmentation also leads investors to demand extra yield for uncertainty. | E, S | Required yield has two parts: expectations and a premium for not knowing. |
 | 9 | Changing ownership | The buyer base has shifted from the Fed and foreign central banks toward private investors such as hedge funds. Bloomberg Economics estimates official holdings fell about 12 points (Fed) and 8 points (foreign official) of GDP since 2020. NY Fed researchers say the market has become more price sensitive, explaining much of historical yield changes. | F | Price-insensitive holders are patient depositors; price-sensitive ones reprice immediately and amplify swings. |
 | 10 | Savings glut erasure | Oxford Economics argues that the forces behind excess global savings (fiscal austerity, US deleveraging, Chinese exports) have unwound or been constrained by protectionism. Borrowers now compete harder for capital just as governments and companies need a great deal of it. | S | Lower structural savings supply raises the long-run real rate. |
@@ -158,9 +160,9 @@ A par yield is a blend, because a coupon bond pays cash at several dates. A spot
 1. **1-year:** a single payment, so the par yield is the spot rate: s₁ = 4.55%.
 2. **2-year:** the bond pays 4.90 after year 1 and 104.90 after year 2, and it prices at 100. Discount the first payment at s₁, then solve for s₂:
 
-$$
+```math
 100 = \frac{4.90}{1.0455} + \frac{104.90}{(1+s_2)^2} \Rightarrow s_2 \approx 4.91\%
-$$
+```
 
 3. **3-year and beyond:** repeat, using the earlier spot rates to discount the early payments and solving for the next unknown.
 
@@ -170,25 +172,25 @@ At two years the gap is small (4.90% par vs. 4.91% spot), but it widens at longe
 
 The general form: locking in an n-year deposit must earn the same as an (n-1)-year deposit rolled into a one-year deposit.
 
-$$
+```math
 (1+y_n)^n = (1+y_{n-1})^{n-1}(1+f_n)
-$$
+```
 
-$$
+```math
 f_n = \frac{(1+y_n)^n}{(1+y_{n-1})^{n-1}} - 1
-$$
+```
 
 Here yₙ is the n-year spot rate, fₙ is the one-year forward rate for year n, and n is the number of years. For a forward covering years a to b:
 
-$$
+```math
 f_{a,b} = \left(\frac{(1+y_b)^b}{(1+y_a)^a}\right)^{1/(b-a)} - 1
-$$
+```
 
 The forward rate is the rate that makes you indifferent between a long deposit and rolling shorter ones, and it is computed from spot rates. For year two: the 2-year spot rate is 4.91%, so the forward is:
 
-$$
+```math
 f_{1,2} = \frac{(1.0491)^2}{1.0455} - 1 \approx 5.27\%
-$$
+```
 
 Rough figures, using annual compounding:
 
@@ -216,9 +218,9 @@ An upward slope can reflect higher expected short rates, a higher term premium, 
 
 The price of a bond when its yield to maturity is known, with m coupon periods per annum, is the present value of the coupons plus the present value of the face value, all discounted at the periodic yield y/m:
 
-$$
+```math
 P_0 = \frac{C}{m} \cdot \frac{1-\left(1+\frac{y}{m}\right)^{-mT}}{\frac{y}{m}} + \frac{F}{\left(1+\frac{y}{m}\right)^{mT}}
-$$
+```
 
 Where:
 
@@ -232,17 +234,17 @@ Where:
 
 A 10-year Treasury has a 4.625% semiannual coupon. Its yield is now 5.26%, so the price is about 95.11, and a buyer who paid par is down about 4.9% on paper with no loss if held to maturity. Using n = 20, coupon = 2.3125, and y/m = 2.63% per half-year:
 
-$$
+```math
 P = 2.3125 \times \frac{1 - 1.0263^{-20}}{0.0263} + 100 \times 1.0263^{-20} \approx 35.61 + 59.50 \approx 95.11
-$$
+```
 
 ### Example B: Real return from holding to maturity
 
 Buy at a 5.29% yield. If inflation averages 3.0%, the real return is about 2.2%. If inflation averages 5.5%, it is about −0.2%: no default and no price loss, yet purchasing power is lost.
 
-$$
+```math
 r = \frac{1 + R}{1 + i} - 1 = \frac{1.0529}{1 + i} - 1
-$$
+```
 
 Here R is the nominal yield (0.0529), r is the real return, and i is the average annual inflation rate, following BKM Section 5.2.
 

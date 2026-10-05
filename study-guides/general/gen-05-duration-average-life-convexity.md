@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 These three measures describe when a bond's money comes back and how its price reacts to rate changes. Duration is the first-order rate sensitivity, convexity corrects for the curve in the price-yield relationship, and average life measures only when principal is repaid.
 

@@ -2,7 +2,7 @@
 
 *Fixed Income Study Guides*
 
-[← All study guides](README.md)
+[← All study guides](../../study-guide-index.md)
 
 Bootstrapping extracts zero-coupon (spot) rates from coupon bond prices, one maturity at a time. Each step prices the earlier cash flows with rates already found, leaving a single unknown to solve.
 
