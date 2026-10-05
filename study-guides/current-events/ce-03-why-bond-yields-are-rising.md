@@ -214,7 +214,7 @@ An upward slope can reflect higher expected short rates, a higher term premium, 
 
 ## 8. Worked Examples
 
-### Example A: Price of a deposit when rates move
+### Example A: Price of a bond when rates move
 
 The price of a bond when its yield to maturity is known, with m coupon periods per annum, is the present value of the coupons plus the present value of the face value, all discounted at the periodic yield y/m:
 
