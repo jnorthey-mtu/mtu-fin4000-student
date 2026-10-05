@@ -51,8 +51,6 @@ With m compounding periods per annum (m = 2 for semiannual), n counts periods an
 f_n = m(\frac{(1+\frac{y_n}{m})^n}{(1+\frac{y_{n-1}}{m})^{n-1}} - 1)
 ```
 
-**Canvas-safe versions.** The Canvas equation editor (Advanced/LaTeX view) can fail on `\left`, `\right`, `\dfrac` and `\;`. Use plain parentheses instead:
-
 ```math
 f_{a,b} = ((1+y_b)^b / (1+y_a)^a)^{1/(b-a)} - 1
 ```
