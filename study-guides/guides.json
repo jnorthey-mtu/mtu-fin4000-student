@@ -148,5 +148,25 @@
     "title": "The IPO Process and the Underwriter's Role",
     "chapters": "2–3",
     "summary": "Primary vs. secondary market, S-1 and roadshow, firm commitment vs. best efforts, spread, greenshoe, underpricing; Facebook, Snowflake, SpaceX and Dell cases"
+  },
+  "general/gen-10-sharpe-ratio-and-risk-premiums.md": {
+    "title": "Sharpe Ratio and Risk Premiums",
+    "chapters": "5",
+    "summary": "Risk premium, excess return, standard deviation, Sharpe ratio, comparing portfolios"
+  },
+  "mini/mini-16-spot-vs-forward-rates.md": {
+    "title": "Spot Rates vs. Forward Rates",
+    "chapters": "15",
+    "summary": "Spot rate as an average, forward rate as one leg, synthetic forward loan, today's US par/spot/forward curves"
+  },
+  "mini/mini-17-intangible-assets.md": {
+    "title": "Intangible Assets",
+    "chapters": "1, 19",
+    "summary": "Intangibles as real assets, accounting standards for recording and reporting them, the analyst's view"
+  },
+  "midterm/midterm-study-guide.md": {
+    "title": "FIN 4000 Midterm Study Guide",
+    "chapters": "1–5, 14–16",
+    "summary": "Chapter-by-chapter review of midterm coverage plus current events"
   }
 }

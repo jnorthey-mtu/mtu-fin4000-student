@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GUIDES = ROOT / "study-guides"
 SECTIONS = [
+    ("midterm", "Midterm study guide", "Review of everything the midterm covers, chapter by chapter."),
     ("general", "General study guides", "In-depth guides on a topic, with worked examples, calculator and spreadsheet steps, and practice questions."),
     ("mini", "Mini study guides", "Short guides on one under-covered idea: learning objectives, worked examples with BA II Plus keystrokes, pitfalls, and CFA-style questions with an answer key."),
     ("current-events", "Current-events study guides", "Course concepts applied to what is happening in the markets now."),
@@ -19,7 +20,8 @@ SECTIONS = [
 
 
 def number(name):
-    return re.match(r"[a-z]+-(\d\d)-", name).group(1)
+    m = re.match(r"[a-z]+-(\d\d)-", name)
+    return m.group(1) if m else "—"
 
 
 def main():
@@ -54,7 +56,6 @@ def main():
     out += ["## Notes", "",
             "- Equations use GitHub's protected math syntax: ```` ```math ```` blocks and `` $`...`$ `` inline.",
             "- PDFs are built from the markdown with `python tools/build_pdfs.py`; this index is built with `python tools/build_index.py`.",
-            "- Canvas quizzes: each `qti` link is a QTI .zip of the guide's practice questions. In Canvas use Settings > Import Course Content > QTI .zip file. Rebuild with `python tools/guide_to_qti.py --all` (needs `pip install text2qti`).",
             "- CFA-style questions are original and are not CFA Institute material.", ""]
     (ROOT / "study-guide-index.md").write_text("\n".join(out), encoding="utf-8")
     print("wrote study-guide-index.md")
