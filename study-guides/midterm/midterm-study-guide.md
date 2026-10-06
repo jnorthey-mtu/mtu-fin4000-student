@@ -34,6 +34,7 @@ You should be able to:
 You should be able to:
 
 - Calculate the tax-equivalent yield to compare a taxable bond with a municipal bond.
+- [ ... more to follow ... ]
 
 ## Chapter 3 — How Securities Are Traded
 
@@ -113,6 +114,7 @@ You should be able to:
 
 - Compare bonds by their duration and convexity.
 - Explain the risks involved in liability matching.
+- [ ... more to follow ... ]
 
 ## Current Events
 
@@ -126,3 +128,4 @@ You should be able to:
 
 - Explain the impact of Treasury buybacks.
 - Explain how rising bond yields have affected the yen carry trade.
+- [ ... more to follow ... ]
