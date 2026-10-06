@@ -16,8 +16,8 @@ Each chapter below lists the topics to know, the study guide that covers each on
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Real vs. financial assets | [mini-01-real-vs-financial-assets](study-guides/mini/mini-01-real-vs-financial-assets.md) | Ch. 1.1 |
-| Intangible assets | [mini-17-intangible-assets](study-guides/mini/mini-17-intangible-assets.md) | Ch. 1.1 |
+| Real vs. financial assets | [mini-01-real-vs-financial-assets](../mini/mini-01-real-vs-financial-assets.md) | Ch. 1.1 |
+| Intangible assets | [mini-17-intangible-assets](../mini/mini-17-intangible-assets.md) | Ch. 1.1 |
 
 You should be able to:
 
@@ -40,10 +40,10 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Purchasing stock on margin | [mini-02-short-sales-and-margin-calls](study-guides/mini/mini-02-short-sales-and-margin-calls.md) | Ch. 3.8 |
-| Short selling stock | [mini-02-short-sales-and-margin-calls](study-guides/mini/mini-02-short-sales-and-margin-calls.md) | Ch. 3.9 |
-| How Treasuries are issued | [mini-11-bond-issuance-underwriting-and-oid](study-guides/mini/mini-11-bond-issuance-underwriting-and-oid.md) | — |
-| How initial public offerings work | [gen-09-ipo-process-and-underwriters-role](study-guides/general/gen-09-ipo-process-and-underwriters-role.md) | — |
+| Purchasing stock on margin | [mini-02-short-sales-and-margin-calls](../mini/mini-02-short-sales-and-margin-calls.md) | Ch. 3.8 |
+| Short selling stock | [mini-02-short-sales-and-margin-calls](../mini/mini-02-short-sales-and-margin-calls.md) | Ch. 3.9 |
+| How Treasuries are issued | [mini-11-bond-issuance-underwriting-and-oid](../mini/mini-11-bond-issuance-underwriting-and-oid.md) | — |
+| How initial public offerings work | [gen-09-ipo-process-and-underwriters-role](../general/gen-09-ipo-process-and-underwriters-role.md) | — |
 
 You should be able to:
 
@@ -55,19 +55,19 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Net asset value | [supp-01-nav-and-etf-arbitrage](study-guides/supplements/supp-01-nav-and-etf-arbitrage.md) | Ch. 4.1 |
-| Fund costs: front-end and back-end loads, no-load funds, expense ratio | [mini-03-mutual-fund-costs](study-guides/mini/mini-03-mutual-fund-costs.md) | Ch. 4.4 |
+| Net asset value | [supp-01-nav-and-etf-arbitrage](../supplements/supp-01-nav-and-etf-arbitrage.md) | Ch. 4.1 |
+| Fund costs: front-end and back-end loads, no-load funds, expense ratio | [mini-03-mutual-fund-costs](../mini/mini-03-mutual-fund-costs.md) | Ch. 4.4 |
 | Closed-end and open-end funds | — | — |
-| Tax differences between ETFs and mutual funds | [mini-14-etf-in-kind-creation-redemption](study-guides/mini/mini-14-etf-in-kind-creation-redemption.md) | — |
-| How Approved | [supp-01-nav-and-etf-arbitrage](study-guides/supplements/supp-01-nav-and-etf-arbitrage.md) | — |
+| Tax differences between ETFs and mutual funds | [mini-14-etf-in-kind-creation-redemption](../mini/mini-14-etf-in-kind-creation-redemption.md) | — |
+| How Approved | [supp-01-nav-and-etf-arbitrage](../supplements/supp-01-nav-and-etf-arbitrage.md) | — |
 
 ## Chapter 5 — Risk, Return, and the Historical Record
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Geometric vs. arithmetic mean | [mini-04-arithmetic-vs-geometric-returns](study-guides/mini/mini-04-arithmetic-vs-geometric-returns.md) | Ch. 5.6 |
+| Geometric vs. arithmetic mean | [mini-04-arithmetic-vs-geometric-returns](../mini/mini-04-arithmetic-vs-geometric-returns.md) | Ch. 5.6 |
 | Holding-period returns | — | Ch. 5.3 |
-| Risk-free rate, risk premiums, and the Sharpe ratio | [gen-10-sharpe-ratio-and-risk-premiums](study-guides/general/gen-10-sharpe-ratio-and-risk-premiums.md) | Ch. 5.3 |
+| Risk-free rate, risk premiums, and the Sharpe ratio | [gen-10-sharpe-ratio-and-risk-premiums](../general/gen-10-sharpe-ratio-and-risk-premiums.md) | Ch. 5.3 |
 
 You should be able to:
 
@@ -79,12 +79,12 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| U.S. Treasuries | [gen-06-us-treasuries](study-guides/general/gen-06-us-treasuries.md) | Ch. 14.1 |
+| U.S. Treasuries | [gen-06-us-treasuries](../general/gen-06-us-treasuries.md) | Ch. 14.1 |
 | Corporate bonds | — | Ch. 14.1 |
-| Callable and putable bonds | [gen-07-callable-putable-convertible-bonds](study-guides/general/gen-07-callable-putable-convertible-bonds.md) | Ch. 14.1 |
+| Callable and putable bonds | [gen-07-callable-putable-convertible-bonds](../general/gen-07-callable-putable-convertible-bonds.md) | Ch. 14.1 |
 | Preferred stock | — | Ch. 14.11 |
 | Accrued interest: flat (clean) price and dirty (invoice) price | — | Ch. 14.1 |
-| Treasury STRIPS | [gen-01-treasury-strips](study-guides/general/gen-01-treasury-strips.md) | Ch. 14.4 |
+| Treasury STRIPS | [gen-01-treasury-strips](../general/gen-01-treasury-strips.md) | Ch. 14.4 |
 
 You should be able to:
 
@@ -95,8 +95,8 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Using forward rates to price a bond and determine its YTM | [mini-16-spot-vs-forward-rates](study-guides/mini/mini-16-spot-vs-forward-rates.md) | Ch. 15.2 |
-| Spot rates vs. forward rates | [mini-16-spot-vs-forward-rates](study-guides/mini/mini-16-spot-vs-forward-rates.md) | Ch. 15.2 |
+| Using forward rates to price a bond and determine its YTM | [mini-16-spot-vs-forward-rates](../mini/mini-16-spot-vs-forward-rates.md) | Ch. 15.2 |
+| Spot rates vs. forward rates | [mini-16-spot-vs-forward-rates](../mini/mini-16-spot-vs-forward-rates.md) | Ch. 15.2 |
 
 You should be able to:
 
@@ -107,8 +107,8 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| Convexity and duration | [mini-07-convexity-and-duration-convexity](study-guides/mini/mini-07-convexity-and-duration-convexity.md) | Ch. 16.1–16.2 |
-| Duration, average life, and convexity | [gen-05-duration-average-life-convexity](study-guides/general/gen-05-duration-average-life-convexity.md) | Ch. 16.1–16.2 |
+| Convexity and duration | [mini-07-convexity-and-duration-convexity](../mini/mini-07-convexity-and-duration-convexity.md) | Ch. 16.1–16.2 |
+| Duration, average life, and convexity | [gen-05-duration-average-life-convexity](../general/gen-05-duration-average-life-convexity.md) | Ch. 16.1–16.2 |
 
 You should be able to:
 
@@ -120,9 +120,9 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
-| U.S. Treasury market intervention and its impact | [ce-05-treasury-buybacks-and-bond-yields](study-guides/current-events/ce-05-treasury-buybacks-and-bond-yields.md) | Ch. 16.1 |
-| Why bond yields are rising | [ce-03-why-bond-yields-are-rising](study-guides/current-events/ce-03-why-bond-yields-are-rising.md) | — |
-| Yen carry trade | [ce-04-yen-carry-trade-and-treasury-roles](study-guides/current-events/ce-04-yen-carry-trade-and-treasury-roles.md) | — |
+| U.S. Treasury market intervention and its impact | [ce-05-treasury-buybacks-and-bond-yields](../current-events/ce-05-treasury-buybacks-and-bond-yields.md) | Ch. 16.1 |
+| Why bond yields are rising | [ce-03-why-bond-yields-are-rising](../current-events/ce-03-why-bond-yields-are-rising.md) | — |
+| Yen carry trade | [ce-04-yen-carry-trade-and-treasury-roles](../current-events/ce-04-yen-carry-trade-and-treasury-roles.md) | — |
 
 You should be able to:
 
