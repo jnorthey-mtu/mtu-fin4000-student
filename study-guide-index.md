@@ -27,7 +27,7 @@ In-depth guides on a topic, with worked examples, calculator and spreadsheet ste
 | 07 | Callable, Putable and Convertible Bonds | 14, 20 | Options review, embedded options, binomial tree pricing, OAS | [md](study-guides/general/gen-07-callable-putable-convertible-bonds.md) · [pdf](study-guides/general/pdf/gen-07-callable-putable-convertible-bonds.pdf) |
 | 08 | Julia for Finance | — | Why Julia, learning path, environment setup, translating Python finance tasks | [md](study-guides/general/gen-08-julia-for-finance.md) · [pdf](study-guides/general/pdf/gen-08-julia-for-finance.pdf) |
 | 09 | The IPO Process and the Underwriter's Role | 2–3 | Primary vs. secondary market, S-1 and roadshow, firm commitment vs. best efforts, spread, greenshoe, underpricing; Facebook, Snowflake, SpaceX and Dell cases | [md](study-guides/general/gen-09-ipo-process-and-underwriters-role.md) · [pdf](study-guides/general/pdf/gen-09-ipo-process-and-underwriters-role.pdf) |
-| 10 | Sharpe Ratio and Risk Premiums | 5 | Risk premium, excess return, standard deviation, Sharpe ratio, comparing portfolios | [md](study-guides/general/gen-10-sharpe-ratio-and-risk-premiums.md) |
+| 10 | Sharpe Ratio and Risk Premiums | 5 | Risk premium, excess return, standard deviation, Sharpe ratio, comparing portfolios | [md](study-guides/general/gen-10-sharpe-ratio-and-risk-premiums.md) · [pdf](study-guides/general/pdf/gen-10-sharpe-ratio-and-risk-premiums.pdf) |
 
 ## Mini study guides
 
@@ -50,8 +50,8 @@ Short guides on one under-covered idea: learning objectives, worked examples wit
 | 13 | Jupyter Notebook Architecture | — | Front end, kernel and memory; hidden state; Markdown and LaTeX; habits and exercise | [md](study-guides/mini/mini-13-jupyter-notebook-architecture.md) · [pdf](study-guides/mini/pdf/mini-13-jupyter-notebook-architecture.pdf) |
 | 14 | ETF In-Kind Creation/Redemption and Tax Avoidance | 4 | Creation/redemption, in-kind tax treatment, heartbeat trades, Treasury announcement | [md](study-guides/mini/mini-14-etf-in-kind-creation-redemption.md) · [pdf](study-guides/mini/pdf/mini-14-etf-in-kind-creation-redemption.pdf) |
 | 15 | Sovereign Bond Yield Correlations | — | Yield comovement, euro-area contagion evidence, reading list, review questions | [md](study-guides/mini/mini-15-sovereign-bond-yield-correlations.md) · [pdf](study-guides/mini/pdf/mini-15-sovereign-bond-yield-correlations.pdf) |
-| 16 | Spot Rates vs. Forward Rates | 15 | Spot rate as an average, forward rate as one leg, synthetic forward loan, today's US par/spot/forward curves | [md](study-guides/mini/mini-16-spot-vs-forward-rates.md) |
-| 17 | Intangible Assets | 1, 19 | Intangibles as real assets, accounting standards for recording and reporting them, the analyst's view | [md](study-guides/mini/mini-17-intangible-assets.md) |
+| 16 | Spot Rates vs. Forward Rates | 15 | Spot rate as an average, forward rate as one leg, synthetic forward loan, today's US par/spot/forward curves | [md](study-guides/mini/mini-16-spot-vs-forward-rates.md) · [pdf](study-guides/mini/pdf/mini-16-spot-vs-forward-rates.pdf) |
+| 17 | Intangible Assets | 1, 19 | Intangibles as real assets, accounting standards for recording and reporting them, the analyst's view | [md](study-guides/mini/mini-17-intangible-assets.md) · [pdf](study-guides/mini/pdf/mini-17-intangible-assets.pdf) |
 
 ## Current-events study guides
 
