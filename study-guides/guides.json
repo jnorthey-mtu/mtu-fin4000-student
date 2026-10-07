@@ -139,6 +139,11 @@
     "chapters": "4",
     "summary": "NAV from SEC filings, ETF creation/redemption arbitrage, who can arbitrage, in-kind tax treatment (IRC §311(b), §852(b)(6))"
   },
+  "supplements/supp-02-duration-and-convexity-as-derivatives.md": {
+    "title": "Duration and Convexity as Derivatives",
+    "chapters": "16",
+    "summary": "Calculus derivations of duration and convexity, Taylor series, convexity as variance, Redington immunization, SymPy and QuantLib checks"
+  },
   "current-events/ce-04-yen-carry-trade-and-treasury-roles.md": {
     "title": "Yen Carry Trade in the Bond Market",
     "chapters": "14–16",

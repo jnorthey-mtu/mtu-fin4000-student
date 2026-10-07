@@ -72,6 +72,7 @@ Reference material that supports the guides, such as conventions and notation.
 | # | Guide | BKM Ch. | Topics | Files |
 | --- | --- | --- | --- | --- |
 | 01 | NAV and ETF Arbitrage | 4 | NAV from SEC filings, ETF creation/redemption arbitrage, who can arbitrage, in-kind tax treatment (IRC §311(b), §852(b)(6)) | [md](study-guides/supplements/supp-01-nav-and-etf-arbitrage.md) · [pdf](study-guides/supplements/pdf/supp-01-nav-and-etf-arbitrage.pdf) |
+| 02 | Duration and Convexity as Derivatives | 16 | Calculus derivations of duration and convexity, Taylor series, convexity as variance, Redington immunization, SymPy and QuantLib checks | [md](study-guides/supplements/supp-02-duration-and-convexity-as-derivatives.md) · [pdf](study-guides/supplements/pdf/supp-02-duration-and-convexity-as-derivatives.pdf) |
 
 ## Notes
 
