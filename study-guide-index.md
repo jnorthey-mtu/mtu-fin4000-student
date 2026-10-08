@@ -64,6 +64,7 @@ Course concepts applied to what is happening in the markets now.
 | 03 | Why Bond Yields Are Rising | 14–15 | Ten market forces behind the 2026 sell-off, credit risk, and the term structure | [md](study-guides/current-events/ce-03-why-bond-yields-are-rising.md) · [pdf](study-guides/current-events/pdf/ce-03-why-bond-yields-are-rising.pdf) |
 | 04 | Yen Carry Trade in the Bond Market | 14–16 | Carry-trade return and break-even, BoJ policy levers, U.S. Treasury yen intervention and FIMA, documented vs. inferred motives | [md](study-guides/current-events/ce-04-yen-carry-trade-and-treasury-roles.md) · [pdf](study-guides/current-events/pdf/ce-04-yen-carry-trade-and-treasury-roles.pdf) |
 | 05 | Treasury Buybacks and Bond Yields | 14–16 | Buyback mechanics vs. QE, yield channels, TGA, duration and convexity primer, sustainability | [md](study-guides/current-events/ce-05-treasury-buybacks-and-bond-yields.md) · [pdf](study-guides/current-events/pdf/ce-05-treasury-buybacks-and-bond-yields.pdf) |
+| 06 | SoftBank Junk Bonds vs. SpaceX BBB Bonds | 14–15 | Junk vs. investment grade, mandates and likely buyers, yen retail vs. offshore pricing, AI financing and Big Tech free cash flow, 29 MCQs and essay | [md](study-guides/current-events/ce-06-softbank-junk-bonds-vs-spacex-bbb-bonds.md) · [pdf](study-guides/current-events/pdf/ce-06-softbank-junk-bonds-vs-spacex-bbb-bonds.pdf) |
 
 ## Supplements
 
