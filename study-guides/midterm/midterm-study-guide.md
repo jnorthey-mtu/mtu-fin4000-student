@@ -34,7 +34,7 @@ You should be able to:
 You should be able to:
 
 - Calculate the tax-equivalent yield to compare a taxable bond with a municipal bond.
-- [ ... more to follow ... ]
+- Understand the basics of morgage backed securities and municipal bonds.
 
 ## Chapter 3 — How Securities Are Traded
 
@@ -59,7 +59,7 @@ You should be able to:
 | Fund costs: front-end and back-end loads, no-load funds, expense ratio | [mini-03-mutual-fund-costs](../mini/mini-03-mutual-fund-costs.md) | Ch. 4.4 |
 | Closed-end and open-end funds | — | — |
 | Tax differences between ETFs and mutual funds | [mini-14-etf-in-kind-creation-redemption](../mini/mini-14-etf-in-kind-creation-redemption.md) | — |
-| How Approved | [supp-01-nav-and-etf-arbitrage](../supplements/supp-01-nav-and-etf-arbitrage.md) | — |
+| How Authorized Participant (AP) use arbitrage an ETF | [supp-01-nav-and-etf-arbitrage](../supplements/supp-01-nav-and-etf-arbitrage.md) | — |
 
 ## Chapter 5 — Risk, Return, and the Historical Record
 
