@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GUIDES = ROOT / "study-guides"
 SECTIONS = [
-    ("midterm", "Midterm study guide", "Review of everything the midterm covers, chapter by chapter."),
+    ("midterm", "Midterm study guides", "Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used."),
     ("general", "General study guides", "In-depth guides on a topic, with worked examples, calculator and spreadsheet steps, and practice questions."),
     ("mini", "Mini study guides", "Short guides on one under-covered idea: learning objectives, worked examples with BA II Plus keystrokes, pitfalls, and CFA-style questions with an answer key."),
     ("current-events", "Current-events study guides", "Course concepts applied to what is happening in the markets now."),

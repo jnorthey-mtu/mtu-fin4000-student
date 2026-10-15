@@ -4,12 +4,13 @@ Study guides for MTU FIN 4000 (Investments), aligned with Bodie, Kane & Marcus, 
 
 File names follow `<type>-<NN>-<title>`: `gen-` general, `mini-` mini, `ce-` current events, `supp-` supplements. Each type is numbered separately.
 
-## Midterm study guide
+## Midterm study guides
 
-Review of everything the midterm covers, chapter by chapter.
+Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used.
 
 | # | Guide | BKM Ch. | Topics | Files |
 | --- | --- | --- | --- | --- |
+| — | FIN 4000 Midterm Calculation Sheet | 2–4, 14–16 | Formulas, variable definitions and worked examples for every midterm calculation, with BA II Plus setup | [md](study-guides/midterm/fin4000-midterm-calculation-sheet.md) · [pdf](study-guides/midterm/pdf/fin4000-midterm-calculation-sheet.pdf) |
 | — | FIN 4000 Midterm Study Guide | 1–5, 14–16 | Chapter-by-chapter review of midterm coverage plus current events | [md](study-guides/midterm/midterm-study-guide.md) · [pdf](study-guides/midterm/pdf/midterm-study-guide.pdf) |
 
 ## General study guides

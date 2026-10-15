@@ -178,5 +178,10 @@
     "title": "FIN 4000 Midterm Study Guide",
     "chapters": "1–5, 14–16",
     "summary": "Chapter-by-chapter review of midterm coverage plus current events"
+  },
+  "midterm/fin4000-midterm-calculation-sheet.md": {
+    "title": "FIN 4000 Midterm Calculation Sheet",
+    "chapters": "2–4, 14–16",
+    "summary": "Formulas, variable definitions and worked examples for every midterm calculation, with BA II Plus setup"
   }
 }
