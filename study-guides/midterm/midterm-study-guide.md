@@ -107,6 +107,7 @@ You should be able to:
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
+| Interest rate sensitivity | [Mini-lecture video (Panopto)](https://huskycast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7578cc78-f493-4351-a58d-b4e101641c9a) | Ch. 16.1 |
 | Convexity and duration | [mini-07-convexity-and-duration-convexity](../mini/mini-07-convexity-and-duration-convexity.md) | Ch. 16.1–16.2 |
 | Duration, average life, and convexity | [gen-05-duration-average-life-convexity](../general/gen-05-duration-average-life-convexity.md) | Ch. 16.1–16.2 |
 
@@ -114,13 +115,13 @@ You should be able to:
 
 - Compare bonds by their duration and convexity.
 - Explain the risks involved in liability matching.
-- [ ... more to follow ... ]
 
 ## Current Events
 
 | Topic | Study guide | BKM reading |
 | --- | --- | --- |
 | U.S. Treasury market intervention and its impact | [ce-05-treasury-buybacks-and-bond-yields](../current-events/ce-05-treasury-buybacks-and-bond-yields.md) | Ch. 16.1 |
+| Midterm essay question (Part D): Treasury buybacks | [midterm-essay-study-guide](midterm-essay-study-guide.md) | Ch. 14–16 |
 | Why bond yields are rising | [ce-03-why-bond-yields-are-rising](../current-events/ce-03-why-bond-yields-are-rising.md) | — |
 | Yen carry trade | [ce-04-yen-carry-trade-and-treasury-roles](../current-events/ce-04-yen-carry-trade-and-treasury-roles.md) | — |
 
@@ -128,4 +129,4 @@ You should be able to:
 
 - Explain the impact of Treasury buybacks.
 - Explain how rising bond yields have affected the yen carry trade.
-- [ ... more to follow ... ]
+
