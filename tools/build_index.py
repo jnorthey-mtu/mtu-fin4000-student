@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Regenerate study-guide-index.md from study-guides/guides.json.
 
-Only guides whose markdown file exists are listed. A PDF link is added when the
-matching pdf/ file exists. Run after adding or renaming a guide:
+Guides are listed when their markdown file or matching pdf/ file exists, with a
+link to each one that exists. Run after adding or renaming a guide:
     python tools/build_index.py
 """
 import json, re
@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GUIDES = ROOT / "study-guides"
 SECTIONS = [
-    ("midterm", "Midterm study guides", "Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used."),
+    ("midterm", "Midterm study guides", "Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used, a printable formula handout, and an essay guide for the written question."),
     ("general", "General study guides", "In-depth guides on a topic, with worked examples, calculator and spreadsheet steps, and practice questions."),
     ("mini", "Mini study guides", "Short guides on one under-covered idea: learning objectives, worked examples with BA II Plus keystrokes, pitfalls, and CFA-style questions with an answer key."),
     ("current-events", "Current-events study guides", "Course concepts applied to what is happening in the markets now."),
@@ -37,13 +37,17 @@ def main():
         out += [f"## {heading}", "", blurb, ""]
         rows = []
         for rel, m in sorted(meta.items()):
-            if not rel.startswith(folder + "/") or not (GUIDES / rel).exists():
+            if not rel.startswith(folder + "/"):
                 continue
             p = Path(rel)
             pdf = GUIDES / folder / "pdf" / (p.stem + ".pdf")
-            links = f"[md](study-guides/{rel})"
+            has_md = (GUIDES / rel).exists()
+            if not has_md and not pdf.exists():
+                continue
+            links = [f"[md](study-guides/{rel})"] if has_md else []
             if pdf.exists():
-                links += f" · [pdf](study-guides/{folder}/pdf/{p.stem}.pdf)"
+                links.append(f"[pdf](study-guides/{folder}/pdf/{p.stem}.pdf)")
+            links = " · ".join(links)
             qti = GUIDES / folder / "qti" / (p.stem + "-qti.zip")
             if qti.exists():
                 links += f" · [qti](study-guides/{folder}/qti/{p.stem}-qti.zip)"

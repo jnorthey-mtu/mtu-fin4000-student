@@ -6,11 +6,13 @@ File names follow `<type>-<NN>-<title>`: `gen-` general, `mini-` mini, `ce-` cur
 
 ## Midterm study guides
 
-Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used.
+Review of everything the midterm covers, chapter by chapter, plus a calculation sheet of every formula used, a printable formula handout, and an essay guide for the written question.
 
 | # | Guide | BKM Ch. | Topics | Files |
 | --- | --- | --- | --- | --- |
 | — | FIN 4000 Midterm Calculation Sheet | 2–4, 14–16 | Formulas, variable definitions and worked examples for every midterm calculation, with BA II Plus setup | [md](study-guides/midterm/fin4000-midterm-calculation-sheet.md) · [pdf](study-guides/midterm/pdf/fin4000-midterm-calculation-sheet.pdf) |
+| — | FIN 4000 Midterm Handout | 2–4, 14–16 | Two-column formula handout with BA II Plus basics and pages for your own notes | [pdf](study-guides/midterm/pdf/fin4000-midterm-handout.pdf) |
+| — | FIN 4000 Midterm Essay Study Guide: Treasury Buybacks | 14–16 | Part D written question: grading criteria, key facts, a five-step answer outline, and practice prompts with model answers | [md](study-guides/midterm/midterm-essay-study-guide.md) · [pdf](study-guides/midterm/pdf/midterm-essay-study-guide.pdf) |
 | — | FIN 4000 Midterm Study Guide | 1–5, 14–16 | Chapter-by-chapter review of midterm coverage plus current events | [md](study-guides/midterm/midterm-study-guide.md) · [pdf](study-guides/midterm/pdf/midterm-study-guide.pdf) |
 
 ## General study guides

@@ -183,5 +183,15 @@
     "title": "FIN 4000 Midterm Calculation Sheet",
     "chapters": "2–4, 14–16",
     "summary": "Formulas, variable definitions and worked examples for every midterm calculation, with BA II Plus setup"
+  },
+  "midterm/fin4000-midterm-handout.md": {
+    "title": "FIN 4000 Midterm Handout",
+    "chapters": "2–4, 14–16",
+    "summary": "Two-column formula handout with BA II Plus basics and pages for your own notes"
+  },
+  "midterm/midterm-essay-study-guide.md": {
+    "title": "FIN 4000 Midterm Essay Study Guide: Treasury Buybacks",
+    "chapters": "14–16",
+    "summary": "Part D written question: grading criteria, key facts, a five-step answer outline, and practice prompts with model answers"
   }
 }
